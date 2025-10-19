@@ -1,0 +1,91 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ViajesByEli.Api.Data;
+using ViajesByEli.Api.Dtos;
+using ViajesByEli.Api.Models;
+using ViajesByEli.Api.Services;
+using System.Security.Claims;
+namespace ViajesByEli.Api.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class OffersController : ControllerBase
+    {
+        private readonly AppDbContext _db;
+        private readonly ICloudService _cloud;
+        public OffersController(AppDbContext db, ICloudService cloud)
+        {
+            _db = db;
+            _cloud = cloud;
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAll([FromQuery] string? destination, [FromQuery] decimal? maxPrice)
+        {
+            var q = _db.Offers.AsQueryable();
+            if (!string.IsNullOrEmpty(destination))
+                q = q.Where(o => o.Destination == destination);
+            if (maxPrice.HasValue)
+                q = q.Where(o => o.Price <= maxPrice.Value);
+            var list = await q.OrderByDescending(o => o.CreatedAt).ToListAsync();
+            return Ok(list);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var offer = await _db.Offers.FindAsync(id);
+            if (offer == null) return NotFound();
+            return Ok(offer);
+        }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Create([FromForm] OfferCreateDto dto)
+        {
+            string? imageUrl = null;
+            if (dto.Image != null)
+            {
+                imageUrl = await _cloud.UploadImageAsync(dto.Image);
+            }
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            int? userId = null;
+            if (int.TryParse(userIdClaim, out var uid)) userId = uid;
+            var offer = new Offer
+            {
+                Title = dto.Title,
+                Description = dto.Description,
+                Price = dto.Price,
+                Destination = dto.Destination,
+                Duration = dto.Duration,
+                ImageUrl = imageUrl,
+                CreatedBy = userId
+            };
+            _db.Offers.Add(offer);
+            await _db.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetById), new { id = offer.Id }, offer);
+        }
+        [Authorize]
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] OfferUpdateDto dto)
+        {
+            var offer = await _db.Offers.FindAsync(id);
+            if (offer == null) return NotFound();
+            if (!string.IsNullOrEmpty(dto.Title)) offer.Title = dto.Title;
+            if (!string.IsNullOrEmpty(dto.Description)) offer.Description = dto.Description;
+            if (dto.Price.HasValue) offer.Price = dto.Price.Value;
+            if (!string.IsNullOrEmpty(dto.Destination)) offer.Destination = dto.Destination;
+            if (!string.IsNullOrEmpty(dto.Duration)) offer.Duration = dto.Duration;
+            await _db.SaveChangesAsync();
+            return Ok(offer);
+        }
+        [Authorize]
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var offer = await _db.Offers.FindAsync(id);
+            if (offer == null) return NotFound();
+            _db.Offers.Remove(offer);
+            await _db.SaveChangesAsync();
+            return NoContent();
+        }
+    }
+}
