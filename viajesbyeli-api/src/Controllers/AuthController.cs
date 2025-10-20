@@ -42,7 +42,7 @@ namespace ViajesByEli.Api.Controllers
             if (user == null) return Unauthorized(new { error = "Credenciales inválidas" });
             if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
                 return Unauthorized(new { error = "Credenciales inválidas" });
-            var token = GenerateJwt(user);
+                var token = GenerateJwt(user);
             return Ok(new { token,user });
         }
         private string GenerateJwt(User user)

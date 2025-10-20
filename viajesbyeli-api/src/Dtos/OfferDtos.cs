@@ -8,8 +8,9 @@ namespace ViajesByEli.Api.Dtos
         public decimal Price { get; set; }
         public string? Destination { get; set; }
         public string? Duration { get; set; }
-        public IFormFile? Image { get; set; }
+        public string? ImageBase64 { get; set; }
     }
+
     public class OfferUpdateDto
     {
         public string? Title { get; set; }

@@ -1,42 +1,62 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { login } from "../services/api";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email === "eli@viajes.com" && password === "1234") {
-      localStorage.setItem("auth", "true");
-      navigate("/admin");
-    } else {
-      alert("Usuario o contraseña incorrectos");
+    try {
+      const data = await login(email, password);
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
+      navigate("/");
+    } catch (error) {
+      alert("Credenciales incorrectas");
     }
   };
 
   return (
-    <div className="flex justify-center items-center h-[80vh]">
-      <form onSubmit={handleSubmit} className="bg-white shadow-lg p-8 rounded-lg w-96">
-        <h2 className="text-2xl font-bold text-eliBlue mb-6 text-center">Iniciar sesión</h2>
-        <input
-          type="email"
-          placeholder="Correo"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="border p-2 w-full mb-4 rounded"
-          required
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="border p-2 w-full mb-4 rounded"
-          required
-        />
-        <button className="bg-eliBlue hover:bg-eliCoral text-white w-full py-2 rounded">
+    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white p-8 rounded-2xl shadow-md w-full max-w-md"
+      >
+        <h2 className="text-2xl font-semibold text-center text-[#33afbe] mb-6">
+          Iniciar sesión
+        </h2>
+
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Correo electrónico
+          </label>
+          <input
+            type="email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#33afbe]"
+          />
+        </div>
+
+        <div className="mb-6">
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            required
+            onChange={(e) => setPassword(e.target.value)}
+            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#33afbe]"
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-[#fb866f] hover:bg-[#f9755c] text-white py-3 rounded-lg transition-colors"
+        >
           Entrar
         </button>
       </form>

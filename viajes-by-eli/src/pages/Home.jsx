@@ -1,29 +1,5 @@
-// src/pages/Home.jsx
-import { useState } from "react";
-
-const datosIniciales = [
-  {
-    id: 1,
-    titulo: "Viaje a Egipto 8 días",
-    descripcion: "Crucero 5* + El Cairo 4*. Vuelos incluidos.",
-    precio: 1249,
-    destino: "Egipto",
-    duracion: "8 días",
-    tipo: "Gran Viaje",
-    imagen: "https://picsum.photos/400/250?random=1",
-  },
-  {
-    id: 2,
-    titulo: "Escapada a París 4 días",
-    descripcion: "Vuelo + hotel 4* con desayuno incluido.",
-    precio: 699,
-    destino: "Francia",
-    duracion: "4 días",
-    tipo: "Escapada",
-    imagen: "https://picsum.photos/400/250?random=2",
-  },
-  // … más objetos
-];
+import { useState, useEffect } from "react";
+import { getOffers } from "../services/api"; // tu servicio para traer las ofertas
 
 function Home() {
   const [busqueda, setBusqueda] = useState("");
@@ -33,23 +9,46 @@ function Home() {
     destino: "",
     tipo: "",
   });
+  const [ofertas, setOfertas] = useState([]);
+  const [detalle, setDetalle] = useState(null); // viaje seleccionado para modal
+
+  // 🔹 Cargar ofertas desde la API al montar el componente
+  useEffect(() => {
+    getOffers()
+      .then((data) => setOfertas(data))
+      .catch(console.error);
+  }, []);
 
   const handleFiltroChange = (e) => {
     const { name, value } = e.target;
     setFiltros((prev) => ({ ...prev, [name]: value }));
   };
 
-  const filtrados = datosIniciales.filter((viaje) => {
+  const filtrados = ofertas.filter((viaje) => {
     const cumpleBusqueda =
-      viaje.titulo.toLowerCase().includes(busqueda.toLowerCase()) ||
-      viaje.destino.toLowerCase().includes(busqueda.toLowerCase());
-    const cumplePrecio = viaje.precio <= filtros.precioMax;
+      viaje.title.toLowerCase().includes(busqueda.toLowerCase()) ||
+      viaje.destination?.toLowerCase().includes(busqueda.toLowerCase());
+    const cumplePrecio = viaje.price <= filtros.precioMax;
     const cumpleDestino =
-      filtros.destino === "" || viaje.destino === filtros.destino;
-    const cumpleTipo = filtros.tipo === "" || viaje.tipo === filtros.tipo;
-    // podrías añadir duracion etc.
-    return cumpleBusqueda && cumplePrecio && cumpleDestino && cumpleTipo;
+      filtros.destino === "" || viaje.destination === filtros.destino;
+    const cumpleTipo =
+      filtros.tipo === "" || viaje.tipo === filtros.tipo;
+    const cumpleDuracion =
+      filtros.duracion === "" || viaje.duration === filtros.duracion;
+    return (
+      cumpleBusqueda &&
+      cumplePrecio &&
+      cumpleDestino &&
+      cumpleTipo &&
+      cumpleDuracion
+    );
   });
+
+  const cerrarModal = () => setDetalle(null);
+  const contactar = (viaje) => {
+    // reemplaza con el correo de tu madre
+    window.open(`mailto:mama@example.com?subject=Información sobre ${viaje.title}`);
+  };
 
   return (
     <div>
@@ -85,6 +84,7 @@ function Home() {
         {/* Filtros laterales */}
         <aside className="md:w-1/4 bg-white p-4 rounded-lg shadow-lg h-fit">
           <h3 className="text-xl font-semibold text-eliBlue mb-4">Filtrar resultados</h3>
+
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1">Precio máximo (€)</label>
             <input
@@ -98,6 +98,7 @@ function Home() {
             />
             <span className="text-sm text-gray-600">Hasta {filtros.precioMax} €</span>
           </div>
+
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1">Destino</label>
             <select
@@ -107,13 +108,14 @@ function Home() {
               className="border p-2 w-full rounded"
             >
               <option value="">Todos</option>
-              <option value="Egipto">Egipto</option>
-              <option value="Francia">Francia</option>
-              {/* agregar más destinos dinámicamente */}
+              {Array.from(new Set(ofertas.map((v) => v.destination))).map((dest) => (
+                <option key={dest} value={dest}>{dest}</option>
+              ))}
             </select>
           </div>
+
           <div className="mb-4">
-            <label className="block text-sm font-medium mb=1">Tipo</label>
+            <label className="block text-sm font-medium mb-1">Tipo</label>
             <select
               name="tipo"
               value={filtros.tipo}
@@ -121,27 +123,32 @@ function Home() {
               className="border p-2 w-full rounded"
             >
               <option value="">Todos</option>
-              <option value="Escapada">Escapada</option>
-              <option value="Gran Viaje">Gran Viaje</option>
+              {Array.from(new Set(ofertas.map((v) => v.tipo).filter(Boolean))).map((tipo) => (
+                <option key={tipo} value={tipo}>{tipo}</option>
+              ))}
             </select>
           </div>
-          {/* Puedes añadir más filtros: duración, Fecha de salida, Temática etc */}
         </aside>
 
         {/* Resultados */}
         <section className="md:w-3/4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filtrados.map((viaje) => (
             <div key={viaje.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
-              <img
-                src={viaje.imagen}
-                alt={viaje.titulo}
-                className="w-full h-48 object-cover"
-              />
+              {viaje.imageUrl && (
+                <img
+                  src={`data:image/jpeg;base64,${viaje.imageUrl}`}
+                  alt={viaje.title}
+                  className="w-full h-48 object-cover"
+                />
+              )}
               <div className="p-4">
-                <h4 className="text-lg font-bold text-eliBlue mb-2">{viaje.titulo}</h4>
-                <p className="text-gray-600 mb-2">{viaje.descripcion}</p>
-                <p className="text-eliCoral font-semibold">Desde {viaje.precio} €</p>
-                <button className="mt-3 bg-eliCoral hover:bg-eliBlue text-white py-2 w-full rounded">
+                <h4 className="text-lg font-bold text-eliBlue mb-2">{viaje.title}</h4>
+                <p className="text-gray-600 mb-2">{viaje.description.substring(0, 80)}...</p>
+                <p className="text-eliCoral font-semibold">Desde {viaje.price} €</p>
+                <button
+                  className="mt-3 bg-eliCoral hover:bg-eliBlue text-white py-2 w-full rounded"
+                  onClick={() => setDetalle(viaje)}
+                >
                   Ver detalles
                 </button>
               </div>
@@ -149,6 +156,38 @@ function Home() {
           ))}
         </section>
       </main>
+
+      {/* Modal de detalles */}
+      {detalle && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg max-w-lg w-full relative overflow-y-auto max-h-[80vh]">
+            <button
+              onClick={() => setDetalle(null)}
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 font-bold"
+            >
+              ×
+            </button>
+            {detalle.imageUrl && (
+              <img
+                src={`data:image/jpeg;base64,${detalle.imageUrl}`}
+                alt={detalle.title}
+                className="w-full h-64 object-cover rounded mb-4"
+              />
+            )}
+            <h3 className="text-2xl font-bold text-eliBlue mb-2">{detalle.title}</h3>
+            <p className="text-gray-700 mb-2">{detalle.description}</p>
+            <p className="text-eliCoral font-semibold mb-2">Precio: {detalle.price} €</p>
+            {detalle.destination && <p className="text-gray-500 mb-2">Destino: {detalle.destination}</p>}
+            {detalle.duration && <p className="text-gray-500 mb-4">Duración: {detalle.duration}</p>}
+            <button
+              onClick={() => window.open(`mailto:mama@example.com?subject=Información sobre ${detalle.title}`)}
+              className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded"
+            >
+              Contactar por email
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

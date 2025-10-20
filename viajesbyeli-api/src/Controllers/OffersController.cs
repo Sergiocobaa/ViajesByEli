@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ViajesByEli.Api.Data;
@@ -20,16 +20,41 @@ namespace ViajesByEli.Api.Controllers
             _cloud = cloud;
         }
         [HttpGet]
+        [HttpGet]
         public async Task<IActionResult> GetAll([FromQuery] string? destination, [FromQuery] decimal? maxPrice)
         {
-            var q = _db.Offers.AsQueryable();
-            if (!string.IsNullOrEmpty(destination))
-                q = q.Where(o => o.Destination == destination);
-            if (maxPrice.HasValue)
-                q = q.Where(o => o.Price <= maxPrice.Value);
-            var list = await q.OrderByDescending(o => o.CreatedAt).ToListAsync();
-            return Ok(list);
+            try
+            {
+                var q = _db.Offers.AsQueryable();
+
+                if (!string.IsNullOrEmpty(destination))
+                    q = q.Where(o => o.Destination == destination);
+                if (maxPrice.HasValue)
+                    q = q.Where(o => o.Price <= maxPrice.Value);
+
+                var list = await q
+                    .AsNoTracking() // evita problemas de tracking
+                    .Select(o => new
+                    {
+                        o.Id,
+                        o.Title,
+                        o.Description,
+                        o.Price,
+                        o.Destination,
+                        o.Duration,
+                        o.ImageUrl
+                    })
+                    .OrderByDescending(o => o.Id)
+                    .ToListAsync();
+
+                return Ok(list);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
         }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -39,30 +64,41 @@ namespace ViajesByEli.Api.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] OfferCreateDto dto)
+        public async Task<IActionResult> Create([FromBody] OfferCreateDto dto)
         {
-            string? imageUrl = null;
-            if (dto.Image != null)
+            try
             {
-                imageUrl = await _cloud.UploadImageAsync(dto.Image);
+                var userIdClaim = User.Claims
+                    .Where(c => c.Type == ClaimTypes.NameIdentifier && int.TryParse(c.Value, out _))
+                    .Select(c => c.Value)
+                    .FirstOrDefault();
+
+                if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out var userId))
+                    return Unauthorized("No se pudo identificar al usuario.");
+
+                var offer = new Offer
+                {
+                    Title = dto.Title,
+                    Description = dto.Description,
+                    Price = dto.Price,
+                    Destination = dto.Destination,
+                    Duration = dto.Duration,
+                    ImageUrl = dto.ImageBase64,
+                    CreatedBy = userId
+                };
+
+                _db.Offers.Add(offer);
+                await _db.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetById), new { id = offer.Id }, offer);
             }
-            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            int? userId = null;
-            if (int.TryParse(userIdClaim, out var uid)) userId = uid;
-            var offer = new Offer
+            catch (Exception ex)
             {
-                Title = dto.Title,
-                Description = dto.Description,
-                Price = dto.Price,
-                Destination = dto.Destination,
-                Duration = dto.Duration,
-                ImageUrl = imageUrl,
-                CreatedBy = userId
-            };
-            _db.Offers.Add(offer);
-            await _db.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetById), new { id = offer.Id }, offer);
+                // 🔹 Mostrar el error exacto para depuración
+                return StatusCode(500, ex.Message);
+            }
         }
+
+
         [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] OfferUpdateDto dto)

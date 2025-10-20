@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // iconos minimalistas
+import { useAuth } from "../hooks/useAuth";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const { user, logout } = useAuth();
 
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
@@ -11,7 +13,7 @@ function Navbar() {
         {/* LOGO */}
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="../assets/img/logo.png" // 👉 pon tu logo aquí (en public/img/logo.png)
+            src="../../public/logo.png" // 👉 pon tu logo aquí (en public/img/logo.png)
             alt="Viajes by Eli"
             className="w-8 h-8 rounded-full border border-eliBlue"
           />
@@ -29,23 +31,28 @@ function Navbar() {
             Inicio
           </Link>
           <Link
-            to="/ofertas"
-            className="hover:text-eliBlue transition-colors duration-200"
-          >
-            Ofertas
-          </Link>
-          <Link
             to="/contacto"
             className="hover:text-eliBlue transition-colors duration-200"
           >
             Contacto
           </Link>
-          <Link
-            to="/login"
-            className="bg-eliCoral text-white px-4 py-2 rounded-lg hover:bg-eliBlue transition-colors duration-200"
-          >
+
+          {!user ? (
+          <Link to="/login" className="bg-eliCoral text-white px-4 py-2 rounded-lg hover:bg-eliBlue transition-colors duration-200">
             Iniciar sesión
           </Link>
+        ) : (
+          <>
+            {user.role === "admin" && (
+              <Link to="/admin" className="text-gray-700 hover:text-[#33afbe]">
+                Dashboard
+              </Link>
+            )}
+            <button onClick={logout} className="text-[#fb866f] hover:underline">
+              Cerrar sesión
+            </button>
+          </>
+        )}
         </div>
 
         {/* ICONO MENÚ MÓVIL */}
@@ -81,13 +88,23 @@ function Navbar() {
           >
             Contacto
           </Link>
-          <Link
-            to="/login"
-            onClick={() => setOpen(false)}
-            className="bg-eliCoral text-white px-4 py-2 rounded-lg hover:bg-eliBlue transition-colors"
-          >
+          {!user ? (
+          <Link to="/login" className="bg-eliCoral text-white px-4 py-2 rounded-lg hover:bg-eliBlue transition-colors duration-200">
             Iniciar sesión
           </Link>
+        ) : (
+          <>
+            {user.role === "admin" && (
+              <Link to="/admin" className="text-gray-700 hover:text-[#33afbe]">
+                Dashboard
+              </Link>
+            )}
+            <button onClick={logout} className="text-[#fb866f] hover:underline">
+              Cerrar sesión
+            </button>
+          </>
+        )}
+          
         </div>
       )}
     </nav>

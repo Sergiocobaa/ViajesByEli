@@ -11,9 +11,13 @@ namespace ViajesByEli.Api.Models
         public string? Destination { get; set; }
         public string? Duration { get; set; }
         public string? ImageUrl { get; set; }
+
+        // FK hacia User
         [ForeignKey("User")]
         public int? CreatedBy { get; set; }
         public User? Creator { get; set; }
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
+
 }
