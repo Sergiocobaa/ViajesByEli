@@ -4,11 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Redefine tus colores personalizados aquí
-        eliCoral: '#1D4ED8', // Ahora es un Azul más oscuro (ej. blue-700)
-        eliBlue: '#1E293B',  // Ahora es un color Gris oscuro (ej. slate-900)
-        // Puedes añadir más si lo necesitas
-        eliSuccess: '#10B981', // emerald-500
+        eliBlue: "#33afbe",
+        eliCoral: "#fb866f",
       },
       animation: {
         fadeIn: "fadeIn 0.3s ease-in-out",
