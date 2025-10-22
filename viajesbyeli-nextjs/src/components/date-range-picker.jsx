@@ -21,6 +21,7 @@ export function DateRangePicker({ className, onDateChange }) {
     }
   }, [date, onDateChange]);
 
+  
   return (
     <div className={cn("grid gap-2", className)}>
       <Popover>
