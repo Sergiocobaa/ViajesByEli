@@ -1,27 +1,7 @@
 import { useState, useEffect } from "react";
 import { getOffers } from "../services/api"; // tu servicio para traer las ofertas
 
-// src/app/layout.jsx (o .tsx)
 
-export default function RootLayout({
-  children,
-}) {
-  return (
-    <html lang="en">
-      <head>
-        {/* PEGA ESTE SCRIPT AQUÍ */}
-        <script
-          async
-          crossOrigin="anonymous"
-          src="https://tweakcn.com/live-preview.min.js"
-        />
-      </head>
-      <body>
-        {children}
-      </body>
-    </html>
-  );
-}
 function Home() {
   const [busqueda, setBusqueda] = useState("");
   const [filtros, setFiltros] = useState({
