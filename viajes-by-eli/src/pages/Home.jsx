@@ -55,11 +55,10 @@ function Home() {
     <div>
       {/* Hero */}
       <section
-        className="bg-cover bg-center h-[350px] flex flex-col justify-center items-center text-white"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=60')",
-        }}
+        className="bg-cover bg-center h-[500px] flex flex-col justify-end items-center text-white relative pb-16"
+        // style={{
+        //   backgroundImage: "url('https://images.unsplash.com/photo-1517400508373-c1514757c21c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", 
+        // }}
       >
         <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg text-center mb-4">
           Encuentra tu escapada perfecta
