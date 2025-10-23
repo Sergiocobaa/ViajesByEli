@@ -63,7 +63,6 @@ export default function OfferDetailPage() {
     };
 
     return (
-        
         <main className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-20 pb-10">
             <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 py-6">
                 <Link href="/">
