@@ -1,4 +1,3 @@
-// src/app/admin/ofertas/page.jsx
 "use client";
 
 import { useAuth } from '@/context/auth-context';
@@ -13,14 +12,15 @@ function AdminOfferForm() {
     const { isAuthenticated, createOffer, loading } = useAuth();
     const router = useRouter();
     const [formData, setFormData] = useState({
-        titulo: '', descripcion: '', precio: 0, destino: '', duration: '', imagen: ''
+        titulo: '', descripcion: '', precio: 0, destino: '', duration: '',
+        imagen: '' 
     });
     const [submissionStatus, setSubmissionStatus] = useState('');
+    const [fileName, setFileName] = useState('Ningún archivo seleccionado');
 
-    // Si aún está cargando la sesión o no está autenticado, redirigir
     if (loading) return <div className="text-center mt-20">Cargando sesión...</div>;
     if (!isAuthenticated) {
-        router.push('/login'); // Redirige a login si no está autenticado
+        router.push('/login');
         return null;
     }
 
@@ -29,16 +29,37 @@ function AdminOfferForm() {
         setFormData(prev => ({ ...prev, [id]: value }));
     };
 
+    
+    const handleImageChange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        setFileName(file.name);
+        const reader = new FileReader();
+        reader.onload = (readerEvent) => {
+            const base64String = readerEvent.target.result;
+            
+            setFormData(prev => ({ ...prev, imagen: base64String }));
+        };
+        reader.readAsDataURL(file);
+    };
     const handleSubmit = async (e) => {
         e.preventDefault();
         setSubmissionStatus('Enviando...');
+        
+        if (!formData.imagen || formData.imagen.length < 100) {
+            setSubmissionStatus('Error: Debe seleccionar una imagen para subir.');
+            return;
+        }
+
         try {
-            // Llama a la función de creación de ofertas del contexto
             await createOffer(formData); 
             setSubmissionStatus('Oferta creada con éxito!');
-            setFormData({ titulo: '', descripcion: '', precio: 0, destino: '', duration: '', imagen: '' }); // Limpiar formulario
+            setFormData({ titulo: '', descripcion: '', precio: 0, destino: '', duration: '', imagen: '' }); 
+            setFileName('Ningún archivo seleccionado');
         } catch (error) {
-            setSubmissionStatus(`Error: ${error.message}.`);
+            console.error("Error al subir oferta:", error);
+            setSubmissionStatus(`Error: No se pudo crear la oferta. ${error.message || ''}`);
         }
     };
 
@@ -51,7 +72,7 @@ function AdminOfferForm() {
                 </CardHeader>
                 <CardContent>
                     <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
-                        {/* Título y Descripción */}
+                        
                         <div className="col-span-2 space-y-4">
                             <Label htmlFor="titulo">Título</Label>
                             <Input id="titulo" type="text" value={formData.titulo} onChange={handleChange} required />
@@ -60,7 +81,6 @@ function AdminOfferForm() {
                             <Label htmlFor="descripcion">Descripción</Label>
                             <Input id="descripcion" type="text" value={formData.descripcion} onChange={handleChange} required />
                         </div>
-                        {/* Precio y Destino */}
                         <div className="space-y-4">
                             <Label htmlFor="precio">Precio (€)</Label>
                             <Input id="precio" type="number" value={formData.precio} onChange={handleChange} required />
@@ -69,14 +89,24 @@ function AdminOfferForm() {
                             <Label htmlFor="destino">Destino</Label>
                             <Input id="destino" type="text" value={formData.destino} onChange={handleChange} required />
                         </div>
-                        {/* Duración e Imagen (simplificados) */}
-                        <div className="space-y-4">
+                        <div className="space-y-4 col-span-2">
                             <Label htmlFor="duration">Duración</Label>
                             <Input id="duration" type="text" value={formData.duration} onChange={handleChange} required />
                         </div>
-                        <div className="space-y-4">
-                            <Label htmlFor="imagen">Imagen (Base64/URL)</Label>
-                            <Input id="imagen" type="text" value={formData.imagen} onChange={handleChange} placeholder="Ruta de imagen o Base64" required />
+
+                        <div className="space-y-2 col-span-2">
+                            <Label htmlFor="imagen-file">Seleccionar Imagen</Label>
+                            <Input 
+                                id="imagen-file" 
+                                type="file" 
+                                accept="image/*"
+                                onChange={handleImageChange}
+                                className="col-span-2 h-auto cursor-pointer"
+                            />
+         
+                            <p className="text-xs text-muted-foreground pt-1">
+                                Archivo: {fileName}
+                            </p>
                         </div>
                         
                         <div className="col-span-2 mt-4">
