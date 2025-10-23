@@ -112,12 +112,12 @@ function Navbar() {
                     <Image
                         src="/logo.png" 
                         alt="Logo de Viajes By Eli"
-                        width={32} // Ajustado para un logo de navbar más pequeño
-                        height={32} 
+                        width={80} // Ajustado para un logo de navbar más pequeño
+                        height={80} 
                         priority={true}
                         className="rounded-lg"
                     />
-                    <span className="hidden sm:inline">VIAJES BY ELI</span>
+      
                 </Link>
 
                 {/* Enlaces y Botones de Acción */}

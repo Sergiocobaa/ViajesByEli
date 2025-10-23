@@ -17,7 +17,7 @@ export const metadata = {
   title: "Viajes by Eli",
   description: "Viajes by eli",
   icons: {
-    icon: "/iocono.ico",
+    icon: "/icono.ico",
   },
 };
 
