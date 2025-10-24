@@ -1,86 +1,52 @@
-// src/services/api.js
+// src/services/api.js (Versión Final Corregida)
 
-// CAMBIA ESTA LÍNEA (Quita localhost:59238)
-const API_URL = "https://viajesbyeliapi-befbegaccmhtb9gt.canadacentral-01.azurewebsites.net/api";
-// 🛑 AÑADE ESTA DEFINICIÓN DEL TIPO DE DATOS 🛑
-/**
- * @typedef {object} Offer
- * @property {number} id
- * @property {string} title
- * @property {string} description
- * @property {number} price
- * @property {string} destination
- * @property {string} duration
- * @property {string} imageUrl
- * @property {string} [tipo] - Opcional, si existe en tu API
- */
+const SPACE_ID = '7bcymz1z9e0q'; // <- Pega tu Space ID real
+const ACCESS_TOKEN = 'Jw96uYYUuMj6LVOKsbdNF_xg'; // <- Pega tu Token de Entrega real
+const CONTENT_TYPE = 'Offer'; // <- Asegúrate de que este es el ID de tu modelo
 
-/** @type {Offer} */
-export const Offer = {};
-export async function login(email, password) {
-  const res = await fetch(`${API_URL}/auth/login`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password }),
-  });
-  if (!res.ok) throw new Error("Error de inicio de sesión");
-  return res.json();
-}
-export async function getOfferById(id) {
+const API_URL = `https://cdn.contentful.com/spaces/${SPACE_ID}/environments/master/entries?access_token=${ACCESS_TOKEN}&content_type=${CONTENT_TYPE}&include=1`;
 
-    const res = await fetch(`${API_URL}/offers/${id}`);
-
-    if (!res.ok) {
-        throw new Error(`Error al buscar la oferta. Código: ${res.status}`);
-    }
-
-    return res.json();
-}
 export async function getOffers() {
-  const res = await fetch(`${API_URL}/offers`);
-  if (!res.ok) throw new Error("Error al obtener las ofertas");
-  return res.json();
-}
-export async function deleteOffer(id, token) {
-  // 2. La llamada fetch debe recibir el token.
-  const res = await fetch(`${API_URL}/offers/${id}`, {
-    method: "DELETE",
-    headers: {
-      "Authorization": `Bearer ${token}`, // <--- ¡Esta línea es crítica!
-    },
-  });
+    try {
+        const res = await fetch(API_URL, { next: { revalidate: 60 } });
+        if (!res.ok) throw new Error(`Fallo Contentful: ${res.status}`);
+        const data = await res.json();
+        
+        if (!data.items) return [];
 
-  // 3. Manejamos el 204 No Content
-  if (res.status === 204) {
-    return true; 
-  }
-  
-  if (!res.ok) {
-    // Si no es 204 y falla, lanza error
-    const errorData = await res.json().catch(() => ({ message: `Error al eliminar. Código: ${res.status}` }));
-    throw new Error(errorData.message || `Fallo al eliminar (Status: ${res.status}).`);
-  }
-  
-  return true; 
+        const assets = data.includes?.Asset || [];
+
+        return data.items.map((item) => {
+            const imageAssetId = item.fields.image?.sys.id;
+            const imageAsset = assets.find(asset => asset.sys.id === imageAssetId);
+            const imageUrl = imageAsset ? `https:${imageAsset.fields.file.url}` : '/placeholder.svg';
+            
+            // 🛑 CORRECCIÓN DEL PRECIO AQUÍ 🛑
+            const priceValue = item.fields.price || 0; // Usa el Field ID correcto (ej: item.fields.precio) y da valor 0 si no existe
+            
+            return {
+                id: item.sys.id,
+                title: item.fields.title || 'Sin Título',
+                description: item.fields.description || '',
+                price: `€${priceValue.toFixed(0)}`, // Ahora esto no fallará
+                destination: item.fields.destination || 'Desconocido',
+                duration: item.fields.duration || 'N/A',
+                tipo: item.fields.tipo || 'General', 
+                imageUrl: imageUrl,
+                discount: "25% OFF", // Mantenemos los datos fijos
+                people: "2 personas", 
+            }
+        });
+
+    } catch (error) {
+        console.error("Error grave al obtener ofertas de Contentful:", error);
+        throw new Error("Fallo al conectar con Contentful. Revisa claves/IDs.");
+    }
 }
 
-export async function createOffer(data, token) {
-  const res = await fetch(`${API_URL}/offers`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      title: data.titulo,
-      description: data.descripcion,
-      price: parseFloat(data.precio),
-      destination: data.destination,
-      duration: data.duration,
-      imageBase64: data.imagen,
-    }),
-  });
-
-  if (!res.ok) throw new Error("Error al crear la oferta");
-  return res.json();
+// 🛑 Elimina o comenta la función getOfferById si no la has implementado aún
+/*
+export async function getOfferById(id) {
+    // ... Lógica para buscar por ID usando Contentful (client.getEntry(id))
 }
+*/

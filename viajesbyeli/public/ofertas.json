@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Escapada a Roma",
+    "destination": "Roma, Italia",
+    "price": 499,
+    "description": "Vuelo + 3 noches en hotel céntrico con desayuno incluido.",
+    "imageUrl": "/img/roma.jpg",
+    "duration": "4 días / 3 noches",
+    "tipo": "Ciudad"
+  },
+  {
+    "id": 2,
+    "title": "Aventura en Islandia",
+    "destination": "Reykjavik, Islandia",
+    "price": 799,
+    "discount" : "20%",
+    "originalPrice" : "1000€",
+    "description": "Viaje de 5 días para ver auroras boreales y glaciares.",
+    "imageUrl": "/img/roses.jpg",
+    "duration": "5 días / 4 noches",
+    "tipo": "Aventura",
+    "people" : "2 personas",
+    "includes": [
+      "Vuelos internacionales ida y vuelta",
+      "6 días en bungalow sobre el agua",
+      "Pensión completa (desayuno, almuerzo y cena)",
+      "Traslado en hidroavión",
+      "Excursión de snorkel en arrecife",
+      "Cena romántica en la playa",
+      "Spa y masajes de bienvenida",
+      "Seguro de viaje todo incluido"
+    ],
+    "notIncludes": ["Bebidas alcohólicas premium", "Excursiones de buceo certificado", "Tratamientos spa adicionales"]
+    }
+]

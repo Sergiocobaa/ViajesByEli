@@ -8,48 +8,41 @@ import { LogOut, LayoutDashboard } from 'lucide-react';
 import { useAuth } from '@/context/auth-context'; 
 
 export function AuthNavButtons(): JSX.Element {
-    const { isAuthenticated, logout, loading } = useAuth();
-
-    if (loading) {
-        return <Button disabled variant="outline" className="bg-white/10 text-white">Cargando...</Button>;
-    }
+    // 🛑 USAMOS EL NUEVO HOOK 🛑
+    const { isAuthenticated, loginToggle, loading } = useAuth(); 
+    
+    // ... (El resto del código se mantiene, pero ajustamos los botones)
 
     if (isAuthenticated) {
-        // Opción 1: Usuario autenticado (Admin)
         return (
             <div className="flex items-center space-x-3">
-                {/* Botón 1: Dashboard (al formulario de ofertas) */}
+                {/* Botón 1: Dashboard */}
                 <Link href="/admin/ofertas">
-                    <Button 
-                        variant="default" 
-                        className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-md transition-shadow gap-2"
-                    >
-                        <LayoutDashboard className="h-5 w-5" /> 
+                    <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-md transition-shadow gap-2">
                         Dashboard
                     </Button>
                 </Link>
                 
-                {/* Botón 2: Cerrar Sesión */}
+                {/* Botón 2: Cerrar Sesión (Ahora es un toggle) */}
                 <Button 
-                    onClick={logout} 
+                    onClick={loginToggle} // <--- CAMBIO CLAVE
                     variant="ghost" 
-                    className="text-white hover:bg-red-600/20 border border-white/20 hover:border-red-600/40"
+                    className="text-red-400 border border-red-400/20 hover:bg-red-400/10"
                 >
-                    <LogOut className="h-5 w-5 mr-2" /> Salir
+                    <LogOut className="h-5 w-5 mr-2" /> Salir (Mock)
                 </Button>
             </div>
         );
     }
 
-    // Opción 2: Usuario NO autenticado
+    // Usuario NO autenticado
     return (
-        <Link href="/login">
-            <Button
-                variant="outline"
-                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
-            >
-                Iniciar Sesión
-            </Button>
-        </Link>
+        <Button
+            onClick={loginToggle} // <--- CAMBIO CLAVE
+            variant="outline"
+            className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
+        >
+            Iniciar Sesión (Mock)
+        </Button>
     );
 }

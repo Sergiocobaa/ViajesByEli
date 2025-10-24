@@ -21,13 +21,13 @@ export default function Home() {
         </div>
 
         {/* Navbar */}
-        <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 py-6">
+        <nav className="relative z-10 flex items-center justify-center px-6 md:px-12 py-6">
           <Link href="/">
             <div className="flex items-center bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
               <img src="/logo.png" alt="Viajes by Eli" className="h-14 w-auto object-contain" />
             </div>
           </Link>
-          <AuthNavButtons />
+          {/* <AuthNavButtons /> */}
         </nav>
 
         {/* Hero Content */}
