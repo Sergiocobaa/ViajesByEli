@@ -3,159 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\dtos\\contactodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:dtos\\contactodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\offerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\offerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\seedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:models\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\migrations\\20251019134208_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:migrations\\20251019134208_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\dtos\\offerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:dtos\\offerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\controllers\\offerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:controllers\\offerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\dtos\\contactodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:dtos\\contactodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:services\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\services\\icloudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:services\\icloudservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|c:\\users\\sergio\\documents\\github\\viajesbyeli\\viajesbyeli-api\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ACCFB5F-77B1-6857-50EA-B1291333D7A2}|ViajesByEli.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 312,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactoDto.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\ContactoDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\ContactoDto.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\ContactoDto.cs",
-              "RelativeToolTip": "Dtos\\ContactoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:13:36.027Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ContactoController.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\ContactoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContactoController.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\ContactoController.cs",
-              "RelativeToolTip": "Controllers\\ContactoController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswCsAAAAQAAAAAAAAAA==",
+              "Title": "SeedController.cs",
+              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\SeedController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SeedController.cs",
+              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\SeedController.cs",
+              "RelativeToolTip": "Controllers\\SeedController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T20:13:09.11Z",
+              "WhenOpened": "2025-10-19T19:20:09.904Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ICloudService.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Services\\ICloudService.cs",
-              "RelativeDocumentMoniker": "Services\\ICloudService.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Services\\ICloudService.cs",
-              "RelativeToolTip": "Services\\ICloudService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:08:46.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20251019134208_Init.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Migrations\\20251019134208_Init.cs",
-              "RelativeDocumentMoniker": "Migrations\\20251019134208_Init.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Migrations\\20251019134208_Init.cs",
-              "RelativeToolTip": "Migrations\\20251019134208_Init.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAswE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:08:45.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OfferDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\OfferDtos.cs",
-              "RelativeDocumentMoniker": "Dtos\\OfferDtos.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\OfferDtos.cs",
-              "RelativeToolTip": "Dtos\\OfferDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:50:20.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\AuthDtos.cs",
-              "RelativeDocumentMoniker": "Dtos\\AuthDtos.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\AuthDtos.cs",
-              "RelativeToolTip": "Dtos\\AuthDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:50:17.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Offer.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Models\\Offer.cs",
-              "RelativeDocumentMoniker": "Models\\Offer.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Models\\Offer.cs",
-              "RelativeToolTip": "Models\\Offer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:35:40.06Z"
             },
             {
               "$type": "Document",
@@ -165,37 +70,40 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-19T13:40:59.795Z"
+              "WhenOpened": "2025-10-24T14:38:17.067Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SeedController.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\SeedController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SeedController.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\SeedController.cs",
-              "RelativeToolTip": "Controllers\\SeedController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBcAAABQAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ContactoController.cs",
+              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\ContactoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactoController.cs",
+              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\ContactoController.cs",
+              "RelativeToolTip": "Controllers\\ContactoController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T19:20:09.904Z"
+              "WhenOpened": "2025-10-20T20:13:09.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OffersController.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\OffersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OffersController.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\OffersController.cs",
-              "RelativeToolTip": "Controllers\\OffersController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAswFQAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "ContactoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\ContactoDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\ContactoDto.cs",
+              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Dtos\\ContactoDto.cs",
+              "RelativeToolTip": "Dtos\\ContactoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T18:35:22.569Z"
+              "WhenOpened": "2025-10-20T20:13:36.027Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "CloudinaryService.cs",
               "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Services\\CloudinaryService.cs",
               "RelativeDocumentMoniker": "Services\\CloudinaryService.cs",
@@ -203,7 +111,34 @@
               "RelativeToolTip": "Services\\CloudinaryService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:08:47.068Z"
+              "WhenOpened": "2025-10-20T19:08:47.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:29:55.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OffersController.cs",
+              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\OffersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OffersController.cs",
+              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\OffersController.cs",
+              "RelativeToolTip": "Controllers\\OffersController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAIAwwE4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T18:35:22.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -215,11 +150,12 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:08:50.24Z"
+              "WhenOpened": "2025-10-20T19:08:50.24Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
@@ -227,31 +163,26 @@
               "RelativeToolTip": "Migrations\\AppDbContextModelSnapshot.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAADwv3EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T19:08:45.996Z"
+              "WhenOpened": "2025-10-20T19:08:45.996Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 53,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T13:35:48.89Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Sergio\\Documents\\GitHub\\ViajesByEli\\viajesbyeli-api\\src\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T13:29:55.962Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

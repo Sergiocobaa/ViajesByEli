@@ -1,4 +1,7 @@
-const API_URL = "https://localhost:59238/api";
+// src/services/api.js
+
+// CAMBIA ESTA LÍNEA (Quita localhost:59238)
+const API_URL = "https://viajesbyeliapi-befbegaccmhtb9gt.canadacentral-01.azurewebsites.net/api";
 // 🛑 AÑADE ESTA DEFINICIÓN DEL TIPO DE DATOS 🛑
 /**
  * @typedef {object} Offer

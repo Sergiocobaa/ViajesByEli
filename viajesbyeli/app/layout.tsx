@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es">
-      <body className={`font-sans antialiased`}>
+    <html lang="es" suppressHydrationWarning>
+      <body className={`font-sans antialiased`} suppressHydrationWarning>
         <AuthProvider>
             {/* Tus componentes de Navbar, Page.tsx y Login.tsx se renderizan dentro de {children}, 
               y ahora pueden usar useTheme y useAuth sin el error 'useAuth debe ser usado dentro de un AuthProvider'.

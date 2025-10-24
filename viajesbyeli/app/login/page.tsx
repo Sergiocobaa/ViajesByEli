@@ -55,13 +55,13 @@ export default function LoginPage() {
   return (
     <main className="min-h-screen relative flex items-center justify-center p-6">
       {/* Background Image (Mantenemos tu estilo y fondo) */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0" suppressHydrationWarning>
         <img
           src="/fondo.jpg"
           alt="Fondo"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/60" suppressHydrationWarning/>
       </div>
 
       {/* Logo */}

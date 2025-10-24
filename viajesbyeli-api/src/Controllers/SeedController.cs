@@ -2,8 +2,9 @@
 using ViajesByEli.Api.Data;
 using ViajesByEli.Api.Models;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
+using BCrypt.Net; // <--- 🛑 NUEVA LIBRERÍA NECESARIA (Asegúrate de que está instalada: dotnet add package BCrypt.Net)
+using System.Security.Claims; // Se mantiene por si se usa en otros métodos
+
 
 namespace ViajesByEli.Api.Controllers
 {
@@ -21,24 +22,26 @@ namespace ViajesByEli.Api.Controllers
         [HttpGet("create-admin")]
         public IActionResult CreateAdmin()
         {
-            if (_context.Users.Any(u => u.Email == "eliarquillo.nadidu@gmail.com"))
+            if (_context.Users.Any(u => u.Email == "scoba2005@gmail.com"))
                 return BadRequest("El usuario admin ya existe.");
 
-            using var sha = SHA256.Create();
-            var passwordHash = Convert.ToBase64String(sha.ComputeHash(Encoding.UTF8.GetBytes("Nanone30?")));
+            // 🛑 CORRECCIÓN CLAVE 🛑
+            // 1. Eliminamos el uso de SHA256 (System.Security.Cryptography).
+            // 2. Usamos BCrypt.HashPassword para crear un hash compatible con la verificación.
+            var passwordHash = BCrypt.Net.BCrypt.HashPassword("1234");
 
             var user = new User
             {
-                Email = "eliarquillo.nadidu@gmail.com",
-                PasswordHash = passwordHash,
-                FullName = "Eli",
+                Email = "scoba2005@gmail.com",
+                PasswordHash = passwordHash, // Ahora guarda el hash correcto de BCrypt
+                FullName = "Sergio",
                 Role = "admin"
             };
 
             _context.Users.Add(user);
             _context.SaveChanges();
 
-            return Ok("Usuario admin creado correctamente con contraseña: Nanone30?");
+            return Ok("Usuario admin creado correctamente con contraseña: Nanone30?. POR FAVOR, REINICIA LA API Y ACCEDE AL ENDPOINT.");
         }
     }
 }
