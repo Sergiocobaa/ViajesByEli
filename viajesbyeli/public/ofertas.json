@@ -4,7 +4,7 @@
   "title": "¡SÚPER CHOLLO DE PUENTE DE DICIEMBRE A TENERIFE!",
   "destination": "Tenerife",
   "price": 305,
-  "description": "✈ Vuelo directo desde Barcelona\n\nHoteles para todos los gustos:\n🌺 Be Smart Florida Plaza 3★ – 305 €\n🌊 Checkin Concordia Playa 4★ – 360 €\n☀ Meliá Costa Atlantis 4★ – 410 €\n⛳ Barceló Tenerife 5★ – 595 €\n🌅 Iberostar Selection Anthelia 5★ – 830 €\n\n📍 Disfruta de playas volcánicas, paisajes únicos y el mejor clima de Europa 🌞\n📩 ¡Reserva YA antes de que se agoten las plazas",
+  "description": "✈ Vuelo directo desde Barcelona\n\nHoteles para todos los gustos:\n🌺 Be Smart Florida Plaza 3★ – 305 €\n🌊 Checkin Concordia Playa 4★ – Desde 360 €\n☀ Meliá Costa Atlantis 4★ – Desde410 €\n⛳ Barceló Tenerife 5★ – Desde 595 €\n🌅 Iberostar Selection Anthelia 5★ – Desde 830 €\n\n📍 Disfruta de playas volcánicas, paisajes únicos y el mejor clima de Europa 🌞\n📩 ¡Reserva YA antes de que se agoten las plazas",
   "imageUrl": "/img/tenerife.jpg",
   "duration": "Del 6 al 9 de Diciembre",
   "tipo": "Ciudad"
@@ -23,7 +23,6 @@
       ],
       "tipo": "Ciudad"
     },
-
     {
     "id": 3,
     "title": "HOTEL LES OLIVERES - Pensión completa",
@@ -33,5 +32,15 @@
     "imageUrl": "/img/elperello.jpeg",
     "duration": "Fechas disponibles del 9 de octubre al 1 de noviembre.",
     "tipo": "Hotel"
+    },
+    {
+    "id": 4,
+    "title": "¡Escápate a Londres con esta oferta irresistible!",
+    "destination": "Londres",
+    "price": 382,
+    "description": "Descubre la magia de una de las ciudades más vibrantes del mundo con 4 días y 3 noches en el hotel Zedwell Piccadilly Circus, ubicado en pleno corazón de Londres, ¡desde solo 382 € por persona! 🏙\n\n💤 Alojamiento: Hotel Zedwell Piccadilly Circus\n🛫 Vuelos directos incluidos\n👥 Precio por persona en habitación doble\n🍴 Régimen: solo alojamiento\n\nY para que tu viaje sea aún más especial, añade experiencias únicas:\n🚢 Crucero express por el río Támesis con audioguía desde 17 €\n🪄 Entrada a los estudios Warner Bros – “The Making of Harry Potter” con transporte desde 125 €\n\n📍 Vive el encanto del Big Ben, pasea por el Támesis, compra en Oxford Street y siente la energía de Piccadilly Circus… ¡todo a un paso de tu hotel!\n\n👉 Reserva ahora y disfruta Londres a tu ritmo.\n✨ Una escapada urbana que nunca olvidarás.",
+    "imageUrl": "/img/londres.jpg",
+    "duration": "*Consultar fechas*",
+    "tipo": "Ciudad"
     }
 ]

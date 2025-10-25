@@ -105,7 +105,7 @@ export function OffersSection() {
                             </p>
                         </div>
                         <div className="flex items-center gap-2">
-                            <span className="text-sm font-medium text-muted-foreground hidden sm:inline">
+                            <span className="text-sm font-medium text-muted-foreground  sm:inline">
                                 {offer.destination}
                             </span>
                             

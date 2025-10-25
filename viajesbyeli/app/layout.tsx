@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title: "Viajes by Eli",
   description: "Descubre los mejores destinos con ofertas exclusivas",
   generator: "v0.app",
+  icons: {
+    icon: '/icono.ico', // Ruta al icono principal (debe estar en public/ o app/)
+
+  },
 }
 
 export default function RootLayout({
