@@ -157,7 +157,7 @@ export default function OfferDetailPage() {
                             {(offer.longDescription || offer.description) && (
                                 <Card className="bg-card border-border">
                                     <CardHeader>
-                                        <CardTitle className="text-2xl font-bold">Descripción Detallada</CardTitle>
+                                        <CardTitle className="text-2xl font-bold">Descripción</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
@@ -225,19 +225,23 @@ export default function OfferDetailPage() {
                             </div>
                         </div>
 
-                        {/* Right Column - Booking Card */}
                         <div className="lg:col-span-1">
                             <Card className="sticky top-24 shadow-xl bg-card border-border">
                                 <CardContent className="p-6 space-y-6">
                                     <div>
                                         <p className="text-sm text-muted-foreground mb-1">Precio por persona</p>
                                         <div className="flex items-baseline gap-2">
+                                            <span className="text-sm text-muted-foreground self-end mb-1">
+                                                Desde
+                                            </span>
+                                            
                                             <span className="text-4xl font-bold text-primary">
                                                 €{offer.price.toFixed(0)}
                                             </span>
+                                            
                                             {offer.originalPrice && (
-                                                <span className="text-lg text-muted-foreground line-through">
-                                                    {offer.originalPrice}
+                                                <span className="text-lg text-muted-foreground line-through self-end mb-1">
+                                                {offer.originalPrice}
                                                 </span>
                                             )}
                                         </div>

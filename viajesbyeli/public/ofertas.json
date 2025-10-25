@@ -5,7 +5,7 @@
   "destination": "Tenerife",
   "price": 305,
   "description": "✈ Vuelo directo desde Barcelona\n\nHoteles para todos los gustos:\n🌺 Be Smart Florida Plaza 3★ – 305 €\n🌊 Checkin Concordia Playa 4★ – 360 €\n☀ Meliá Costa Atlantis 4★ – 410 €\n⛳ Barceló Tenerife 5★ – 595 €\n🌅 Iberostar Selection Anthelia 5★ – 830 €\n\n📍 Disfruta de playas volcánicas, paisajes únicos y el mejor clima de Europa 🌞\n📩 ¡Reserva YA antes de que se agoten las plazas",
-  "imageUrl": "/img/tenerife.avif",
+  "imageUrl": "/img/tenerife.jpg",
   "duration": "Del 6 al 9 de Diciembre",
   "tipo": "Ciudad"
   },
@@ -22,5 +22,16 @@
       "🏨 Hotel 4⭐ en alojamiento y desayuno"
       ],
       "tipo": "Ciudad"
+    },
+
+    {
+    "id": 3,
+    "title": "HOTEL LES OLIVERES - Pensión completa",
+    "destination": "El Perello, Costa Dorada",
+    "price": 42,
+    "description": "¡Super chollo de otoño!\nDisfruta de una escapada con pensión completa, agua y vino incluidos.\nFechas disponibles del 9 de octubre al 1 de noviembre.\nEstancia mínima de 3 noches.\n\nCondiciones:\n\t•\tNo se admiten cambios de nombre.\n\t•\tNo se admiten bloqueos. Las reservas de 5 o más habitaciones por agencia se considerarán grupales.\n\t•\tCambio de distribución sujeto a disponibilidad.\n\t•\tCancelación gratuita hasta 5 días antes de la entrada al hotel.\n\nAprovecha esta oferta y disfruta de unos días de descanso sin preocuparte por nada.",
+    "imageUrl": "/img/elperello.jpeg",
+    "duration": "Fechas disponibles del 9 de octubre al 1 de noviembre.",
+    "tipo": "Hotel"
     }
 ]

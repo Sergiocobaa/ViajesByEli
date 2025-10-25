@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Viajeros - Tu Agencia de Viajes",
+  title: "Viajes by Eli",
   description: "Descubre los mejores destinos con ofertas exclusivas",
   generator: "v0.app",
 }
