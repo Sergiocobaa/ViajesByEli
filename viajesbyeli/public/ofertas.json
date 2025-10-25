@@ -1,36 +1,26 @@
 [
   {
-    "id": 1,
-    "title": "Escapada a Roma",
-    "destination": "Roma, Italia",
-    "price": 499,
-    "description": "Vuelo + 3 noches en hotel céntrico con desayuno incluido.",
-    "imageUrl": "/img/roma.jpg",
-    "duration": "4 días / 3 noches",
-    "tipo": "Ciudad"
+  "id": 1,
+  "title": "¡SÚPER CHOLLO DE PUENTE DE DICIEMBRE A TENERIFE!",
+  "destination": "Tenerife",
+  "price": 305,
+  "description": "✈ Vuelo directo desde Barcelona\n\nHoteles para todos los gustos:\n🌺 Be Smart Florida Plaza 3★ – 305 €\n🌊 Checkin Concordia Playa 4★ – 360 €\n☀ Meliá Costa Atlantis 4★ – 410 €\n⛳ Barceló Tenerife 5★ – 595 €\n🌅 Iberostar Selection Anthelia 5★ – 830 €\n\n📍 Disfruta de playas volcánicas, paisajes únicos y el mejor clima de Europa 🌞\n📩 ¡Reserva YA antes de que se agoten las plazas",
+  "imageUrl": "/img/tenerife.avif",
+  "duration": "Del 6 al 9 de Diciembre",
+  "tipo": "Ciudad"
   },
   {
-    "id": 2,
-    "title": "Aventura en Islandia",
-    "destination": "Reykjavik, Islandia",
-    "price": 799,
-    "discount" : "20%",
-    "originalPrice" : "1000€",
-    "description": "Viaje de 5 días para ver auroras boreales y glaciares.",
-    "imageUrl": "/img/roses.jpg",
-    "duration": "5 días / 4 noches",
-    "tipo": "Aventura",
-    "people" : "2 personas",
-    "includes": [
-      "Vuelos internacionales ida y vuelta",
-      "6 días en bungalow sobre el agua",
-      "Pensión completa (desayuno, almuerzo y cena)",
-      "Traslado en hidroavión",
-      "Excursión de snorkel en arrecife",
-      "Cena romántica en la playa",
-      "Spa y masajes de bienvenida",
-      "Seguro de viaje todo incluido"
-    ],
-    "notIncludes": ["Bebidas alcohólicas premium", "Excursiones de buceo certificado", "Tratamientos spa adicionales"]
+      "id": 2,
+      "title": "Escapada a Praga",
+      "destination": "Praga",
+      "price": 405 ,
+      "description": "🌆✨ Escápate a PRAGA ✨🌆 La ciudad más mágica de Europa te espera con su encanto invernal ❄️. Tres días para perderte entre calles de cuento, puentes iluminados y una vida nocturna que no duerme 🔥✨ Plazas limitadas ✨Reserva ya tu plaza y vive Praga como nunca 💫",
+      "imageUrl": "/img/praga.webp",
+      "duration": "Del 28 al 30 de noviembre",
+      "includes": [
+      "🚀 Vuelo directo desde Barcelona",
+      "🏨 Hotel 4⭐ en alojamiento y desayuno"
+      ],
+      "tipo": "Ciudad"
     }
 ]
