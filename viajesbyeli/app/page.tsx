@@ -13,9 +13,10 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/fondo.jpg"
-            alt="Destino paradisíaco"
-            className="w-full h-full object-cover"
+              src="/fondo.jpg"
+              alt="Destino paradisíaco"
+              className="w-full h-full object-cover"
+              fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background" />
         </div>
@@ -24,7 +25,7 @@ export default function Home() {
         <nav className="relative z-10 flex items-center justify-center px-6 md:px-12 py-6">
           <Link href="/">
             <div className="flex items-center bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-              <img src="/logo.png" alt="Viajes by Eli" width="90px" />
+              <img src="/logo.png" alt="Viajes by Eli" width="80px" />
             </div>
           </Link>
           {/* <AuthNavButtons /> */}
