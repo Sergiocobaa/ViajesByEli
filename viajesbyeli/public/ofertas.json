@@ -42,5 +42,24 @@
     "imageUrl": "/img/londres.jpg",
     "duration": "*Consultar fechas*",
     "tipo": "Ciudad"
+    },
+    {
+      "id" : 5,
+      "title" : "RUMANÍA: TRAS LAS HUELLAS DE DRÁCULA",
+      "destination": "Rumanía",
+      "description" : "Imagina una mañana brumosa en los Cárpatos. El aire es fresco, el bosque susurra historias antiguas y, entre las montañas, se alza una silueta inconfundible: el Castillo de Bran.\nEste castillo es uno de los lugares más visitados de Rumanía, y gran parte de su fama se debe a un personaje que ha trascendido la historia para convertirse en leyenda: Drácula. \nPrepárate para descubrir importantes ciudades y pueblos llenos de encanto, parajes naturales sorprendentes, históricos castillo y lugares únicos que, siglos tras siglos, alimentan las fabulosas leyendas de Transilvania.",
+      "price" : 1385,
+      "includes": [
+      "Visitas panorámicas de Sibiu, Sighisoara, Targu Mures, Brasov y Bucarest.",
+      "Otros lugares comentados por nuestro guía: Bistrita, Paso del Borgo, Piatra Neamt, desfiladero de Bicaz y Lago Rojo.",
+      "Visitas a los Monasterios de Cozia, Moldovita, Sucevita, Voronet y Agapia, con entradas incluidas.",
+      "Visitas a los castillos de Bran y Peles, con entradas incluidas.",
+      "Entradas a: catedral ortodoxa y la iglesia romano-católica de Sibiu, catedral ortodoxa de Targu Mures, Iglesia Stavropoleos y la iglesia de San Antón en la Corte Vieja de Bucarest.",
+      "Cena típica rumana.",
+      "Servicio de audio individual.",
+      "10 comidas."
+      ],
+      "duration" : "8 Días / 7 noches",
+      "imageUrl" : "/img/rumania.webp"
     }
 ]
