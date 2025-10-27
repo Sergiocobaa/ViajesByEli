@@ -61,5 +61,23 @@
       ],
       "duration" : "8 Días / 7 noches",
       "imageUrl" : "/img/rumania.webp"
-    }
+    },
+    {
+    "id": 6,
+    "title": "TAILANDIA IMPRESCINDIBLE",
+    "destination": "Tailandia",
+    "price": 1550,
+    "description": "Bangkok, Chiang Rai y Chiang Mai Este circuito por Tailandia nos permite llegar en avión al norte de Tailandia, para conocer el famoso Triángulo de Oro, los templos blanco y azul en Chiang Rai, el templo Doi Suthep en Chiang Mai, junto con unsantuario de elefantes.\n\nSERVICIOS Y EXPERIENCIAS OPCIONALES EN BANGKOK\nMercado flotante de Damnoen Saduak y mercado del tren+111€\nAyuthaya ida en bus y vuelta en barco (dia completo con almuerzo incluido abordo)+174€\nCena crucero por el rio (con traslados incluidos desde y hacia el hotel)+74€\n\nSERVICIOS Y EXPERIENCIAS OPCIONALES EN CHIANG MAI\nExperiencia en Elephant Nature Park+118€  \n\nDuración del viaje: 9 días / 6 noches",
+    "imageUrl": "/img/tailandia.jpg",
+    "includes": [
+      "Vuelos en línea regular, clase turista.",
+      "Compensación huella de CO2 de todos los vuelos",
+      "Traslados, visitas y entradas, según itinerario.",
+      "Alojamiento en hoteles previstos (o similares), en régimen indicado en itinerario.",
+      "2 almuerzos según itinerario (sin bebidas).",
+      "Circuito exlusivo clientes con guía local en castellano.",
+      "Seguro de viaje."
+    ],
+    "duration": "Del 1/09/2025 al 31/03/2026"
+  }
 ]
