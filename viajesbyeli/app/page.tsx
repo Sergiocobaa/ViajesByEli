@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { AuthNavButtons } from "@/components/auth-nav-buttons"
 import Link from "next/link"
 import { Footer } from "@/components/footer"
+import Navbar from "@/components/navbar"
 
 export default function Home() {
   return (
@@ -21,16 +22,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background" />
         </div>
 
-        {/* Navbar */}
-        <nav className="relative z-10 flex items-center justify-center px-6 md:px-12 py-6">
-          <Link href="/">
-            <div className="flex items-center bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
-              <img src="/logo.png" alt="Viajes by Eli" width="80px" />
-            </div>
-          </Link>
-          {/* <AuthNavButtons /> */}
-        </nav>
-
+        
+        <Navbar />
         {/* Hero Content */}
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 md:px-12 pb-20">
           <h1 className="text-5xl md:text-7xl font-bold text-white text-center mb-4 text-balance">
