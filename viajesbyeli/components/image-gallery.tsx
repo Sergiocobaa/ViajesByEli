@@ -29,6 +29,7 @@ export function ImageGallery({ images, title }: ImageGalleryProps) {
           src={displayImages[selectedIndex] || "/placeholder.svg"}
           alt={`${title} - Foto ${selectedIndex + 1}`}
           className="w-full h-full object-cover"
+          
         />
 
         {displayImages.length > 1 && (

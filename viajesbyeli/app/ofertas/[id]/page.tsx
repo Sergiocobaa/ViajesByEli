@@ -11,7 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Users, MapPin, Check, X, ArrowLeft, DollarSign, Clock, Loader2 } from "lucide-react";
 import { Footer } from "@/components/footer"; // Asumiendo que existe
 import Image from 'next/image'; // Usaremos Next/Image
-
+import { ImageGallery } from "@/components/image-gallery"
 // Define el tipo de la Oferta (Asegúrate que coincida con tu JSON)
 interface Offer {
     id: number;
@@ -22,6 +22,7 @@ interface Offer {
     imageUrl: string;
     duration: string;
     tipo: string;
+    images : string[];
     discount?: string;
     longDescription?: string;
     highlights?: string[];
