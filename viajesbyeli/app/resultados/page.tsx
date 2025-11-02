@@ -63,9 +63,8 @@ function ResultsContent() {
             // 🛑 AJUSTAMOS LOS CAMPOS DE BÚSQUEDA A TU JSON 🛑
             offer.title.toLowerCase().includes(query.toLowerCase()) ||
             offer.destination.toLowerCase().includes(query.toLowerCase()) ||
-            offer.description.toLowerCase().includes(query.toLowerCase()) ||
-            offer.tipo.toLowerCase().includes(query.toLowerCase())
-        );
+            offer.description.toLowerCase().includes(query.toLowerCase())
+                  );
         setFilteredResults(results);
       } else {
         // Si no hay query, mostramos todas
@@ -82,9 +81,8 @@ function ResultsContent() {
       (offer) =>
         offer.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         offer.destination.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        offer.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        offer.tipo.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+        offer.description.toLowerCase().includes(searchTerm.toLowerCase())
+          );
     setFilteredResults(results);
     // Opcional: Actualizar la URL con el nuevo término (requiere useRouter)
     // router.push(`/resultados?q=${searchTerm}`);
