@@ -107,16 +107,15 @@
       },
       {
       "id" : 8,
-      "title": "¡Black Friday con Trasmed! ",
-      "destination": "Pensiula / Baleares",
-      "price": 0,
-      "description": "¡La mar de descuentos te espera! 🌊\n\nAprovecha hasta un 50% de descuento en tus viajes entre Península y Baleares.\nCompra tus billetes antes del 24 de noviembre y viaja hasta septiembre de 2026. \n\n🏖️🎁No dejes pasar esta oportunidad para planear tus próximas escapadas al mejor precio.",
-      "imageUrl": "/img/crucero.jpg",
-      "discount" : "50%",
+      "title": "¡Descubre Múnich en 2025!",
+      "destination": "Múnich",
+      "price": 351,
+      "description": "Sumérgete en el encanto bávaro con esta escapada de 4 días y 3 noches en el corazón de la ciudad 🌆\n\n🏨 Hotel: München City Center Affiliated by Meliá ⭐⭐⭐⭐⭐\n✈ Vuelo + Hotel incluidos\n📍 Salidas directas desde:\n➡ Barcelona — desde 351€\n➡ Madrid — desde 483€\n➡ Bilbao — desde 547€\n➡ Málaga — desde 559€\n\n✨ Experiencias opcionales:\n🚶‍♀ Tour a pie por el casco antiguo desde 20€\n🏰 Excursión a Neuschwanstein y Linderhof desde 69€\n\n💬 ¡Reserva fácil y rápida con nuestro Chat Vuelo + Hotel!",
+      "imageUrl": "/img/munich.avif",
       "images" : [
-        "/img/crucero.jpg"
+        "/img/munich.avif"
       ],
       
-      "duration": "Viaja hasta antes de septiembre de 2026"
+      "duration": "*Consultar fechas*"
       }
 ]
