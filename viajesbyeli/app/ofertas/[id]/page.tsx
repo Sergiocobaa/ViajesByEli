@@ -161,9 +161,14 @@ export default function OfferDetailPage() {
                                         <CardTitle className="text-2xl font-bold">Descripción</CardTitle>
                                     </CardHeader>
                                     <CardContent>
-                                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
-                                            {offer.longDescription || offer.description}
-                                        </p>
+                                            {/* Usamos dangerouslySetInnerHTML para que React renderice el HTML 
+                                                de la descripción (negritas <strong>) y mantenemos 
+                                                whitespace-pre-line para que respete los saltos de línea (\n).
+                                            */}
+                                            <p 
+                                                className="text-muted-foreground leading-relaxed whitespace-pre-line"
+                                                dangerouslySetInnerHTML={{ __html: offer.longDescription || offer.description }}
+                                            />
                                     </CardContent>
                                 </Card>
                             )}
