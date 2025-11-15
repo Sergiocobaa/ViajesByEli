@@ -161,6 +161,15 @@
       "images" : [
         "/img/estambul.jpg"
       ],
+       "includes": [
+        "Vuelo Barcelona - Estambul",
+        "Traslado aeropuerto- hotel",
+        "Alojamiento con Desayuno",
+        "Crucero por el Bósforo y el Cuerno de Oro. Tour en español de 2 horas",
+        "Traslado hotel- aeropuerto ",
+        "Vuelo Estambul-Barcelona",
+        "Seguro de Inclusión."
+            ],
       
       "duration": "*Consultar fechas*"
       }
