@@ -150,5 +150,18 @@
       ],
       
       "duration": "13 días"
+      },
+      {
+      "id" : 11,
+      "title": "Sumergete en la magia de Estambul",
+      "destination": "Estambul",
+      "price": 649,
+      "description": "Sumérgete en la magia de Estambul, la ciudad de las mil y una noches que cabalga entre dos continentes. Deja que el aroma de las especias del Gran Bazar te envuelva, admira la cúpula de Santa Sofía que desafía el tiempo y navega por el Bósforo mientras el sol se pone sobre los minaretes. Esta escapada es un viaje a un lugar donde la historia, la cultura y la gastronomía se encuentran en cada esquina.\n\nSalidas disponibles también desde otras ciudades (consultar).\n\nDía 1: España / Estambul\nSalida en avión a Estambul. Traslado al hotel y resto del día libre para comenzar a descubrir la ciudad. Alojamiento.\n\nDía 2: Estambul (Bósforo y Cuerno de Oro)\nDesayuno. Presentación en el punto de encuentro para la visita del Bósforo y el cuerno de Oro. Comenzaremos con un pequeño paseo de 30 minutos a pie donde podremos ir tomándole el pulso a esta vibrante ciudad y descubriendo algunos de sus monumentos más representativos como es la muralla bizantina. Caminaremos hacia el puerto donde embarcaremos en un barco que nos llevara a través del Bosforo y del Cuerno de Oro. Durante la navegación podremos observar el Palacio de Topkapi o la famosa Torre Gálata. Pasaremos por debajo de sus puentes y divisaremos el Palacio de Dolmabace, el Palacio de Ciragan o la fortaleza de Rumelihisari. Llegaremos a la parte asiática de la ciudad donde tendremos opción de quedarnos y explorar y regresar por nuestra cuenta o continuar en el barco y regresar al punto de partida. Regreso por su cuenta al hotel. Alojamiento.\n\nDía 3: Estambul (Día Libre)\nDesayuno. Día libre en el que poder disfrutar por su cuenta, por ejemplo, visitando sus icónicas mezquitas, como la de Santa Sofia, la preciosa Mezquita azul o la de Soliman o simplemente paseando por sus calles y disfrutando de esta ciudad donde la combinación de oriente con occidente se encuentra en cada esquina. Opcionalmente, podrá tomar distintas excursiones opcionales que le ayudaran a visitar todos los monumentos que esta ciudad ofrece a sus visitantes. Alojamiento.\n\nDía 4: Estambul / España\nDesayuno. A la hora acordada traslado al aeropuerto. Vuelo de regreso a España. Llegada.",
+      "imageUrl": "/img/estambul.jpg",
+      "images" : [
+        "/img/estambul.jpg"
+      ],
+      
+      "duration": "*Consultar fechas*"
       }
 ]
