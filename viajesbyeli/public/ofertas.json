@@ -172,5 +172,25 @@
             ],
       
       "duration": "*Consultar fechas*"
+      },
+      {
+      "id" : 12,
+      "title": "¡CHOLLO! Cruceros Costa por el Mediterráneo: Mini-crucero de 2 días desde 99€",
+      "destination": "Mediterráneo",
+      "price": 99,
+      "description": "¡¡ÚLTIMA HORA!!\nCruceros para el mes de NOVIEMBRE por el Mediterráneo\n\nAPROVECHA ESTA OPORTUNIDAD !!\n\nDescubre las mejores rutas por el Mediterráneo con estas ofertas exclusivas:\n\n---\nBarco: Costa Pacifica\nItinerario: España, Túnez, Italia, Francia\nFecha: 24/11/2025\nPrecio: 7 días a partir de 449 €\n\nBarco: Costa Toscana\nItinerario: España, Italia, Francia\nFecha: 27/11/2025\nPrecio: 3 días a partir de 299 €\n\nBarco: Costa Toscana\nItinerario: España, Italia\nFecha: 30/11/2025\nPrecio: 2 días a partir de 99 €\n\nBarco: Costa Toscana\nItinerario: España, Italia\nFecha: 30/11/2025\nPrecio: 3 días a partir de 149 €\n\nBarco: Costa Toscana\nItinerario: España, Italia, Francia\nFecha: 30/11/2025\nPrecio: 7 días a partir de 449 €\n\n\nCondiciones de la Tarifa:\nSe trata de una tarifa más económica sujeta a condiciones especiales, disponible de forma limitada por tiempo antes de la salida.\n\nCuota de servicio no incluida.",
+      "imageUrl": "/img/cruceroCosta.avif",
+      "images" : [
+        "/img/cruceroCosta.avif"
+      ],
+       "includes": [
+        "Servicios portuarios.",
+        "Camarote asignado automáticamente por el sistema.",
+        "Permite la acumulación de puntos C|Club por gastos a bordo (no por días de crucero)",
+        "La tarifa no es acumulable con otras promociones y no es retroactiva.",
+        "Plazas limitadas."
+            ],
+      
+      "duration": "Noviembre"
       }
 ]
