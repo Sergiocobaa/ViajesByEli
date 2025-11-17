@@ -192,5 +192,16 @@
             ],
       
       "duration": "Noviembre"
-      }
+      },
+      {
+      "id" : 13,
+      "title": "OFERTAS BLACK FRIDAY 2025",
+      "destination": "BLACK FRIDAY",
+      "price": 50,
+      "description": "<strong>¡RESERVA YA! BLACK FRIDAY 2025</strong>\n\n¡Aprovecha nuestras ofertas de Black Friday y consigue hasta <strong>300€ de descuento por persona</strong> para tu próximo gran viaje!\n\n<small>Ventas del 17 de noviembre al 1 de diciembre de 2025.\nVálido para viajar del 1 de diciembre de 2025 al 31 de octubre de 2026.</small>\n\n---\n<strong>DESCUENTOS POR DESTINO:</strong>\n\n🌍 <strong>HASTA 300€ / PERSONA</strong>\n• Isla Mauricio\n\n🌴 <strong>HASTA 250€ / PERSONA</strong>\n• México\n• República Dominicana\n• Cuba\n• Tailandia\n• Costa Rica\n\n✈️ <strong>HASTA 150€ / PERSONA</strong>\n• Senegal\n• Uzbekistán\n\n🕌 <strong>HASTA 100€ / PERSONA</strong>\n• Jordania\n• Egipto\n• Cabo Verde\n• Marruecos\n• Túnez\n• Colombia\n\n☀️ <strong>HASTA 50€ / PERSONA</strong>\n• Turquía\n• Islas\n\n---\n¡Consulta condiciones llamando al 649613702 o contacta con @ViajesByEli",
+      "imageUrl": "/img/blackFriday.jpg",
+      "images" : [
+        "/img/blackFriday.jpg"
+      ]
+          }
 ]
