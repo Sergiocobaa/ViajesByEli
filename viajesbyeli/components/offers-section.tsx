@@ -88,11 +88,9 @@ export function OffersSection() {
                 <CardContent className="p-6 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl font-bold mb-1">{offer.title}</h3>
-                    <p 
-                                                className="text-muted-foreground leading-relaxed whitespace-pre-line"
-                                                dangerouslySetInnerHTML={{ __html: offer.description.substring(0,70) }}
-                    />
-                    
+                    <p className="text-sm text-muted-foreground mb-4">
+                      {offer.description.substring(0, 70)}...
+                    </p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                       <Calendar className="w-4 h-4" />
                       <span>{offer.duration}</span>
