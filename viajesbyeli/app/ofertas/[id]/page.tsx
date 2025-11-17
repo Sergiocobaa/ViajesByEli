@@ -1,18 +1,20 @@
-// src/app/ofertas/[id]/page.tsx
+// 🛑 NO USAR "use client" aquí. Esta página es ahora un Server Component.
 
-"use client"; // <--- Convertimos a Client Component
-
-import React, { useEffect, useState } from 'react'; // Necesitamos React aquí
 import Link from "next/link";
-import { notFound, useParams } from "next/navigation"; // useParams solo funciona en Client Components
+import { notFound } from "next/navigation";
+import Image from 'next/image';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Users, MapPin, Check, X, ArrowLeft, DollarSign, Clock, Loader2 } from "lucide-react";
+import { Calendar, Users, MapPin, Check, X, ArrowLeft, DollarSign, Clock } from "lucide-react";
 import { Footer } from "@/components/footer"; // Asumiendo que existe
-import Image from 'next/image'; // Usaremos Next/Image
-import { ImageGallery } from "@/components/image-gallery"
-// Define el tipo de la Oferta (Asegúrate que coincida con tu JSON)
+
+// 1. Importaciones para leer archivos en el servidor
+import fs from 'fs/promises';
+import path from 'path';
+
+// 2. Definición del Tipo (Interface)
+// Asegúrate de que esto coincida 100% con la estructura de tu ofertas.json
 interface Offer {
     id: number;
     title: string;
@@ -22,7 +24,6 @@ interface Offer {
     imageUrl: string;
     duration: string;
     tipo: string;
-    images : string[];
     discount?: string;
     longDescription?: string;
     highlights?: string[];
@@ -33,98 +34,86 @@ interface Offer {
     country?: string;
 }
 
-export default function OfferDetailPage() {
-    const params = useParams(); // Usamos el hook de cliente
-    const offerId = params.id as string;
-    const [offer, setOffer] = useState<Offer | null>(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+// 3. Función Helper para obtener los datos de UNA oferta
+// Esta función se ejecuta solo en el servidor.
+async function getOfferData(id: string): Promise<Offer | undefined> {
+    const filePath = path.join(process.cwd(), 'public', 'ofertas.json');
+    try {
+        const fileContent = await fs.readFile(filePath, 'utf8');
+        const offers: Offer[] = JSON.parse(fileContent);
+        
+        const offerIdNum = parseInt(id, 10);
+        if (isNaN(offerIdNum)) return undefined;
 
-    // Usamos useEffect y fetch para leer el JSON
-    useEffect(() => {
-        if (!offerId) return;
+        return offers.find((o) => o.id === offerIdNum);
 
-        const loadOffer = async () => {
-            try {
-                setLoading(true);
-                // Leemos el JSON desde public/ usando fetch
-                const res = await fetch("/ofertas.json");
-                if (!res.ok) throw new Error("No se pudo cargar el archivo JSON de ofertas");
+    } catch (error) {
+        console.error("Error al leer ofertas.json para Metadata:", error);
+        return undefined;
+    }
+}
 
-                const offers = await res.json();
+// 4. 🛑 GENERADOR DE METADATOS DINÁMICOS 🛑
+// Esta es la función clave para el SEO.
+// Se ejecuta en el servidor antes de renderizar la página.
+export async function generateMetadata({ params }: { params: { id: string } }) {
+    const offer = await getOfferData(params.id);
 
-                // Buscamos la oferta
-                const offerIdNum = parseInt(offerId, 10);
-                const foundOffer = offers.find((o: Offer) => o.id === offerIdNum);
-
-                if (!foundOffer || isNaN(offerIdNum)) {
-                    setError("Oferta no encontrada.");
-                    // En Client Components, notFound() puede no funcionar como esperado, manejamos con estado
-                } else {
-                    setOffer(foundOffer);
-                    setError(null);
-                }
-            } catch (err) {
-                console.error("Error al cargar la oferta:", err);
-                setError("No se pudo cargar la oferta. Es posible que no exista o el archivo JSON sea inválido.");
-            } finally {
-                setLoading(false);
-            }
+    if (!offer) {
+        return {
+            title: "Oferta no encontrada",
+            description: "La oferta que buscas ya no está disponible.",
         };
-
-        loadOffer();
-    }, [offerId]); // Se ejecuta cuando el ID cambia
-
-    // --- Renderizado Condicional ---
-    if (loading) {
-        return (
-            <div className="min-h-screen flex items-center justify-center pt-32 text-center text-xl">
-                 <Loader2 className="w-8 h-8 animate-spin mr-3 text-primary" /> Cargando detalles...
-            </div>
-        );
     }
 
-    // Si hay error o no se encontró la oferta
-    if (error || !offer) {
-        return (
-             <div className="min-h-screen flex flex-col items-center justify-center pt-32 text-center text-xl text-destructive">
-                <p>{error || "Oferta no encontrada."}</p>
-                 <Link href="/" className="mt-4 inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-lg">
-                    <ArrowLeft className="w-5 h-5" /> Volver a Inicio
-                 </Link>
-             </div>
-        );
-    }
+    // Genera un título y descripción únicos para Google
+    return {
+        title: `${offer.title} | Viajes by Eli`,
+        description: `${offer.description.substring(0, 155)}...`, // Límite de 155-160 chars
+        // Opcional: Open Graph para redes sociales
+        openGraph: {
+            title: offer.title,
+            description: offer.description,
+            images: [
+                {
+                    url: offer.imageUrl.startsWith('/') ? `https://www.viajesbyeli.es${offer.imageUrl}` : offer.imageUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: offer.title,
+                },
+            ],
+        },
+    };
+}
 
-    // Función para el enlace de WhatsApp
+
+// 5. El Componente de la Página (Ahora es un Server Component)
+export default async function OfferDetailPage({ params }: { params: { id: string } }) {
+    
+    // Obtenemos los datos de la oferta en el servidor
+    const offer = await getOfferData(params.id);
+
+    // Si no se encuentra, mostramos la página 404 de Next.js
+    if (!offer) {
+        notFound();
+    }
+    
+    // Función para el enlace de WhatsApp (no necesita "use client")
     const generateWhatsappLink = (title: string): string => {
-        const phone = "34649613702"; // Reemplaza con tu número si es necesario
+        const phone = "34649613702";
         const message = `Buenas! Estaría interesado en la oferta de ${title}.`;
         const encodedMessage = encodeURIComponent(message);
         return `https://api.whatsapp.com/send/?phone=${phone}&text=${encodedMessage}&type=phone_number&app_absent=0`;
     };
 
     return (
-        // Añadimos padding superior aquí para compensar la navbar global
-        <div className="min-h-screen flex flex-col">
-            <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b">
-                <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <ArrowLeft className="w-5 h-5" />
-                    <span className="font-medium">Volver</span>
-                </Link>
-                <Link href="/">
-                    <img src="/logo.png" alt="Viajes by Eli" className="h-10 w-auto" />
-                </Link>
-                
-                </div>
-            </header>
-
+        <div className="min-h-screen flex flex-col pt-24 bg-background text-foreground"> 
+            
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[400px]">
                 <Image
                     src={offer.imageUrl || "/placeholder.svg"}
-                    alt={offer.title || 'Imagen de oferta'}
+                    alt={offer.title}
                     layout="fill"
                     objectFit="cover"
                     priority
@@ -145,7 +134,10 @@ export default function OfferDetailPage() {
                         <p className="text-xl md:text-2xl text-pretty">{offer.destination}</p>
                     </div>
                 </div>
-                 
+                 <Link href="/" className="absolute top-6 left-6 z-20 flex items-center gap-2 bg-card/80 backdrop-blur-sm text-card-foreground hover:bg-card px-4 py-2 rounded-full shadow-lg transition">
+                    <ArrowLeft className="w-5 h-5" />
+                    <span>Volver a Ofertas</span>
+                 </Link>
             </section>
 
             {/* Main Content */}
@@ -154,21 +146,18 @@ export default function OfferDetailPage() {
                     <div className="grid lg:grid-cols-3 gap-8">
                         {/* Left Column - Details */}
                         <div className="lg:col-span-2 space-y-8">
-                            {/* Descripción Larga o Corta si no existe la larga */}
+                            
+                            {/* Descripción Larga */}
                             {(offer.longDescription || offer.description) && (
                                 <Card className="bg-card border-border">
                                     <CardHeader>
-                                        <CardTitle className="text-2xl font-bold">Descripción</CardTitle>
+                                        <CardTitle className="text-2xl font-bold">Descripción Detallada</CardTitle>
                                     </CardHeader>
                                     <CardContent>
-                                            {/* Usamos dangerouslySetInnerHTML para que React renderice el HTML 
-                                                de la descripción (negritas <strong>) y mantenemos 
-                                                whitespace-pre-line para que respete los saltos de línea (\n).
-                                            */}
-                                            <p 
-                                                className="text-muted-foreground leading-relaxed whitespace-pre-line"
-                                                dangerouslySetInnerHTML={{ __html: offer.longDescription || offer.description }}
-                                            />
+                                        {/* Usamos 'whitespace-pre-line' para respetar los \n del JSON */}
+                                        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+                                            {offer.longDescription || offer.description}
+                                        </p>
                                     </CardContent>
                                 </Card>
                             )}
@@ -231,23 +220,19 @@ export default function OfferDetailPage() {
                             </div>
                         </div>
 
+                        {/* Right Column - Booking Card */}
                         <div className="lg:col-span-1">
                             <Card className="sticky top-24 shadow-xl bg-card border-border">
                                 <CardContent className="p-6 space-y-6">
                                     <div>
                                         <p className="text-sm text-muted-foreground mb-1">Precio por persona</p>
                                         <div className="flex items-baseline gap-2">
-                                            <span className="text-sm text-muted-foreground self-end mb-1">
-                                                Desde
-                                            </span>
-                                            
                                             <span className="text-4xl font-bold text-primary">
                                                 €{offer.price.toFixed(0)}
                                             </span>
-                                            
                                             {offer.originalPrice && (
-                                                <span className="text-lg text-muted-foreground line-through self-end mb-1">
-                                                {offer.originalPrice}
+                                                <span className="text-lg text-muted-foreground line-through">
+                                                    {offer.originalPrice}
                                                 </span>
                                             )}
                                         </div>
@@ -265,32 +250,35 @@ export default function OfferDetailPage() {
                                             <Users className="w-5 h-5 text-primary" />
                                             <div>
                                                 <p className="text-sm text-muted-foreground">Personas</p>
-                                                <p className="font-medium">{offer.people || 'No especificado'}</p>
+                                                <p className="font-medium">{offer.people || '2 personas (estándar)'}</p>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-3">
                                             <MapPin className="w-5 h-5 text-primary" />
                                             <div>
-                                                <p className="text-sm text-muted-foreground">Destino</p>
+                                                <p className="text-sm text-muted-foreground">Destino</Capa>
                                                 <p className="font-medium">{offer.destination}</p>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="space-y-3">
-                                        <a
-                                          href={generateWhatsappLink(offer.title)}
-                                          target="_blank"
-                                          rel="noopener noreferrer"
+                                        <a 
+                                          href={generateWhatsappLink(offer.title)} 
+                                          target="_blank" 
+                                          rel="noopener noreferrer" 
                                           className="w-full text-white font-semibold bg-green-500 hover:bg-green-600 rounded-lg flex items-center justify-center gap-2 h-12 text-base transition"
                                         >
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-whatsapp"><path d="M10 13a4 4 0 0 0 4 4l2-2h4V8H6z"/><path d="M15 17l-2 2-4-4V6h4l2-2 4 4v4l-2 2h-4z"/></svg>
                                             Contactar por WhatsApp
                                         </a>
-                                        
+                                        <Button variant="outline" className="w-full bg-transparent" size="lg">
+                                            Consultar disponibilidad
+                                        </Button>
                                     </div>
-
-                                    
+                                    <p className="text-xs text-center text-muted-foreground">
+                                        Reserva sin compromiso.
+                                    </p>
                                 </CardContent>
                             </Card>
                         </div>
