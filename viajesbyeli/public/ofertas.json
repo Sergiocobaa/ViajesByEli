@@ -1,29 +1,29 @@
 [
   {
-  "id": 1,
-  "title": "¡SÚPER CHOLLO DE PUENTE DE DICIEMBRE A TENERIFE!",
-  "destination": "Tenerife",
-  "price": 305,
-  "description": "✈ Vuelo directo desde Barcelona\n\nHoteles para todos los gustos:\n🌺 Be Smart Florida Plaza 3★ – 305 €\n🌊 Checkin Concordia Playa 4★ – Desde 360 €\n☀ Meliá Costa Atlantis 4★ – Desde410 €\n⛳ Barceló Tenerife 5★ – Desde 595 €\n🌅 Iberostar Selection Anthelia 5★ – Desde 830 €\n\n📍 Disfruta de playas volcánicas, paisajes únicos y el mejor clima de Europa 🌞\n📩 ¡Reserva YA antes de que se agoten las plazas",
-  "imageUrl": "/img/tenerife.jpg",
-  "duration": "Del 6 al 9 de Diciembre",
-  "tipo": "Ciudad"
+    "id": 1,
+    "title": "¡SÚPER CHOLLO DE PUENTE DE DICIEMBRE A TENERIFE!",
+    "destination": "Tenerife",
+    "price": 305,
+    "description": "✈ Vuelo directo desde Barcelona\n\nHoteles para todos los gustos:\n🌺 Be Smart Florida Plaza 3★ – 305 €\n🌊 Checkin Concordia Playa 4★ – Desde 360 €\n☀ Meliá Costa Atlantis 4★ – Desde410 €\n⛳ Barceló Tenerife 5★ – Desde 595 €\n🌅 Iberostar Selection Anthelia 5★ – Desde 830 €\n\n📍 Disfruta de playas volcánicas, paisajes únicos y el mejor clima de Europa 🌞\n📩 ¡Reserva YA antes de que se agoten las plazas",
+    "imageUrl": "/img/tenerife.jpg",
+    "duration": "Del 6 al 9 de Diciembre",
+    "tipo": "Ciudad"
   },
   {
-      "id": 2,
-      "title": "Escapada a Praga",
-      "destination": "Praga",
-      "price": 405 ,
-      "description": "🌆✨ Escápate a PRAGA ✨🌆 La ciudad más mágica de Europa te espera con su encanto invernal ❄️. Tres días para perderte entre calles de cuento, puentes iluminados y una vida nocturna que no duerme 🔥✨ Plazas limitadas ✨Reserva ya tu plaza y vive Praga como nunca 💫",
-      "imageUrl": "/img/praga.webp",
-      "duration": "Del 28 al 30 de noviembre",
-      "includes": [
+    "id": 2,
+    "title": "Escapada a Praga",
+    "destination": "Praga",
+    "price": 405,
+    "description": "🌆✨ Escápate a PRAGA ✨🌆 La ciudad más mágica de Europa te espera con su encanto invernal ❄️. Tres días para perderte entre calles de cuento, puentes iluminados y una vida nocturna que no duerme 🔥✨ Plazas limitadas ✨Reserva ya tu plaza y vive Praga como nunca 💫",
+    "imageUrl": "/img/praga.webp",
+    "duration": "Del 28 al 30 de noviembre",
+    "includes": [
       "🚀 Vuelo directo desde Barcelona",
       "🏨 Hotel 4⭐ en alojamiento y desayuno"
-      ],
-      "tipo": "Ciudad"
-    },
-    {
+    ],
+    "tipo": "Ciudad"
+  },
+  {
     "id": 3,
     "title": "HOTEL LES OLIVERES - Pensión completa",
     "destination": "El Perello, Costa Dorada",
@@ -32,8 +32,8 @@
     "imageUrl": "/img/elperello.jpeg",
     "duration": "Fechas disponibles del 9 de octubre al 1 de noviembre.",
     "tipo": "Hotel"
-    },
-    {
+  },
+  {
     "id": 4,
     "title": "¡Escápate a Londres con esta oferta irresistible!",
     "destination": "Londres",
@@ -42,14 +42,14 @@
     "imageUrl": "/img/londres.jpg",
     "duration": "*Consultar fechas*",
     "tipo": "Ciudad"
-    },
-    {
-      "id" : 5,
-      "title" : "RUMANÍA: TRAS LAS HUELLAS DE DRÁCULA",
-      "destination": "Rumanía",
-      "description" : "Imagina una mañana brumosa en los Cárpatos. El aire es fresco, el bosque susurra historias antiguas y, entre las montañas, se alza una silueta inconfundible: el Castillo de Bran.\nEste castillo es uno de los lugares más visitados de Rumanía, y gran parte de su fama se debe a un personaje que ha trascendido la historia para convertirse en leyenda: Drácula. \nPrepárate para descubrir importantes ciudades y pueblos llenos de encanto, parajes naturales sorprendentes, históricos castillo y lugares únicos que, siglos tras siglos, alimentan las fabulosas leyendas de Transilvania.",
-      "price" : 1385,
-      "includes": [
+  },
+  {
+    "id": 5,
+    "title": "RUMANÍA: TRAS LAS HUELLAS DE DRÁCULA",
+    "destination": "Rumanía",
+    "description": "Imagina una mañana brumosa en los Cárpatos. El aire es fresco, el bosque susurra historias antiguas y, entre las montañas, se alza una silueta inconfundible: el Castillo de Bran.\nEste castillo es uno de los lugares más visitados de Rumanía, y gran parte de su fama se debe a un personaje que ha trascendido la historia para convertirse en leyenda: Drácula. \nPrepárate para descubrir importantes ciudades y pueblos llenos de encanto, parajes naturales sorprendentes, históricos castillo y lugares únicos que, siglos tras siglos, alimentan las fabulosas leyendas de Transilvania.",
+    "price": 1385,
+    "includes": [
       "Visitas panorámicas de Sibiu, Sighisoara, Targu Mures, Brasov y Bucarest.",
       "Otros lugares comentados por nuestro guía: Bistrita, Paso del Borgo, Piatra Neamt, desfiladero de Bicaz y Lago Rojo.",
       "Visitas a los Monasterios de Cozia, Moldovita, Sucevita, Voronet y Agapia, con entradas incluidas.",
@@ -58,11 +58,11 @@
       "Cena típica rumana.",
       "Servicio de audio individual.",
       "10 comidas."
-      ],
-      "duration" : "8 Días / 7 noches",
-      "imageUrl" : "/img/rumania.webp"
-    },
-    {
+    ],
+    "duration": "8 Días / 7 noches",
+    "imageUrl": "/img/rumania.webp"
+  },
+  {
     "id": 6,
     "title": "TAILANDIA IMPRESCINDIBLE",
     "destination": "Tailandia",
@@ -79,130 +79,152 @@
       "Seguro de viaje."
     ],
     "duration": "Del 1/09/2025 al 31/03/2026"
-    },
-    {
-      "id" : 7,
-      "title": "LAPONIA : ESPECIAL PUENTE DE DICIEMBRE",
-      "destination": "Nuorgam, Laponia",
-      "price": 2345,
-      "description": "❄✨ Este diciembre… nos vamos al fin del mundo (literalmente) ✨\n\n¿Has soñado alguna vez con ver auroras boreales, montar en moto de nieve o dormir en una cabaña frente al Ártico? Pues es ahora o nunca. 😏🔥\n📍 Nuorgam, Laponia – Finlandia & Noruega\nEl punto más al norte de toda Europa. Paisajes blancos, silencio puro y cielos que bailan en verde.\n\n✈ Salidas 2025:\n• 30 de noviembre desde Madrid\n• 4 de diciembre desde Barcelona\n\n📸 Auroras boreales, nieve virgen y la aventura más top del año. ¿Te vienes?",
-      "imageUrl": "/img/laponia.jpg",
-      "discount" : "📢 Últimas plazas disponibles",
-      "images" : [
-        "/img/laponia.jpg",
-        "/img/laponia2.jpg",
-        "/img/laponia3.jpg",
-        "/img/laponia4.jpg",
-        "/img/laponia5.jpg"
-      ],
-      "includes": [
-        "Vuelos + traslados aeropuerto-hotel",
-        "4 noches en cabañas en plena Laponia",
-        "Moto de nieve, granja de renos, pesca en hielo, raquetas de nieve…",
-        "Pensión completa y guía durante todo el viaje",
-        "Ropa térmica pro incluida",
-        "Seguro de viaje" 
-      ],
-      "duration": "*Fechas en descripción*"
-      },
-      {
-      "id" : 8,
-      "title": "¡Descubre Múnich en 2025!",
-      "destination": "Múnich",
-      "price": 351,
-      "description": "Sumérgete en el encanto bávaro con esta escapada de 4 días y 3 noches en el corazón de la ciudad 🌆\n\n🏨 Hotel: München City Center Affiliated by Meliá ⭐⭐⭐⭐⭐\n✈ Vuelo + Hotel incluidos\n📍 Salidas directas desde:\n➡ Barcelona — desde 351€\n➡ Madrid — desde 483€\n➡ Bilbao — desde 547€\n➡ Málaga — desde 559€\n\n✨ Experiencias opcionales:\n🚶‍♀ Tour a pie por el casco antiguo desde 20€\n🏰 Excursión a Neuschwanstein y Linderhof desde 69€\n\n💬 ¡Reserva fácil y rápida con nuestro Chat Vuelo + Hotel!",
-      "imageUrl": "/img/munich.avif",
-      "images" : [
-        "/img/munich.avif"
-      ],
-      
-      "duration": "*Consultar fechas*"
-      },
-      {
-      "id" : 9,
-      "title": "SUPER JAPON",
-      "destination": "Japón",
-      "price": 3170,
-      "description": "Japón Esencial: Tradición y Vanguardia\n\nEmbárcate en una aventura inolvidable de 9 noches por el corazón de Japón, la tierra donde la tradición milenaria y la modernidad más vibrante se dan la mano. Este circuito está diseñado para que descubras la esencia del país con total comodidad.\n\nExperimenta la increíble eficiencia del mundialmente famoso tren bala, descansa en hoteles seleccionados de Primera Categoría y déjate guiar por un asistente de habla hispana que te descubrirá los secretos de cada destino. Con 5 almuerzos y 2 cenas incluidas, también podrás degustar la gastronomía local sin preocupaciones.\n\nUna oportunidad única para vivir la magia de Japón, con la comodidad de tenerlo todo organizado.\n\n <strong> Salidas y Precios</strong>\n\t·Salidas: Salidas frecuentes programadas durante todo el año.\n\t·Orígenes: Vuelos desde Madrid y Barcelona.\n\t·Destinos: Japón.\n\t·Compañía aérea: Qatar Airways (o similar).",
-      "imageUrl": "/img/japon.jpg",
-      "includes": [
-        "Billete línea regular, clase turista, con la compañía Qatar Airways.",
-        "9 noches en los hoteles previstos o similares, en cat. A, en hab. doble.",
-        "5 almuerzos y 2 cenas según itinerario.",
-        "Guía asistente de habla hispana durante el circuito, excepto en los trayectos en tren bala.",
-        "Seguro de Inclusión."
-            ],
-      "images" : [
-        "/img/japon.jpg"
-      ],
-      
-      "duration": "12 días / 9 noches"
-      },
-      {
-      "id" : 10,
-      "title": "JAPÓN A TU AIRE",
-      "destination": "Japón",
-      "price": 1820,
-      "description": "Japón a tu Aire: La Ruta Clásica\n\nDescubre la esencia de Japón en este completo recorrido de 13 días diseñado para el <strong>viajero independiente</strong>. Viajando por tu cuenta, podrás explorar a tu ritmo las joyas del país, desde la moderna <strong>Osaka</strong> hasta la vibrante <strong>Tokio</strong>.\n\nEste itinerario te llevará a la histórica <strong>Kioto</strong>, la conmovedora <strong>Hiroshima</strong> (con su isla sagrada de Miyajima) y los tesoros feudales de <strong>Kanazawa</strong> y <strong>Takayama</strong>. Culminarás tu viaje a los pies del icónico <strong>Monte Fuji</strong> en Hakone, antes de sumergirte en la inmensidad de la capital.\n\nUna ruta optimizada para el Japan Rail Pass, con alojamiento y desayuno incluidos cada día, dándote la libertad de descubrir, comer y explorar sin ataduras.\n\n\n<strong>ITINERARIO DÍA A DÍA</strong>\n------------------------\n\nDía 1 Osaka\nLlegada a Osaka y traslado al hotel por su cuenta. Alojamiento.\n\nDía 2 Osaka\nDesayuno. Día libre. Les recomendamos visitar por su cuenta, el Castillo de Osaka y pasear por el distrito de Dotonbori al anochecer. Alojamiento.\n\nDía 3 Osaka/Kioto\nDesayuno. Traslado por su cuenta a la estación de tren, para salir hacia Kioto (utilizando el Japan Rail Pass). Llegada a Kioto y traslado al hotel por su cuenta. En Kioto recomendamos que realicen la visita del templo Todai-ji y del gran santuario sintoísta Kasuga. Alojamiento.\n\nDía 4 Kioto\nDesayuno. Día libre. Les recomendamos realizar visita de la ciudad por su cuenta. Alojamiento.\n\nDía 5 Kioto / Hiroshima\nDesayuno. Salida por su cuenta hasta la estación de Kioto y desde allí hacia Hiroshima vía Osaka usando el Japan Rail Pass. Llegada a Hiroshima, traslado de la estación al hotel por su cuenta. Alojamiento.\n\nDía 6 Hiroshima\nDesayuno. Día libre. En Hiroshima recomendamos visitar por su cuenta el Museo y Parque de la Paz, con la cúpula de la Bomba Atómica, o acercarse a la cercana isla de Miyayima para ver el santuario Itsukushima. Alojamiento.\n\nDía 7 Hiroshima /Kanazawa\nDesayuno. Traslado a la estación de Hiroshima por su cuenta, para salir en tren a Kanazawa (utilizando el Japan Rail Pass). Llegada a Kanazawa y traslado al hotel por su cuenta. Alojamiento.\nEn Kanazawa recomendamos visitar por su cuenta el parque Kenroku-en, el distrito de las geishas Higashi Chaya-gal y el castillo de los Maeda. Pueden optar por visitar también la casa del Samurai Nomura y el mercado de Omicho Ichiba. Alojamiento.\n\nDía 8 Kanazawa /Takayama\nDesayuno. Traslado por su cuenta hasta la estación de Kanazawa para salir en tren hacia Takayama. Llegada a Takayama traslado al hotel por su cuenta y tarde libre para explorar la ciudad. Alojamiento.\n\nDía 9 Takayama / Nagoya /Odawara / Hakone\nDesayuno. Traslado por su cuenta a la estación de Takayama, para salir hacia Odawara, vía Nagoya (utilizando el Japan Rail Pass). Llegada a Odawara y traslado al hotel por su cuenta en Hakone. Recomendamos hacer un paseo en barco por el Lago Ashi, para divisar el Monte Fuji o ver el valle de Owakudani. Alojamiento.\n\nDía 10 Hakone / Odawara / Tokio\nDesayuno. Traslado por su cuenta a la estación de Odawara, para salir en tren a Tokio, vía Nagoya (utilizando el Japan Rail Pass). Llegada a Tokio y traslado al hotel por su cuenta. Alojamiento.\n\nDías 11-12 Tokio\nDesayuno. Días libres. Les recomendamos realizar la visita de la ciudad por su cuenta; ver el santuario sintoísta Meiji Jingu y el barrio de Asakusa, donde se encuentran el templo Senso-ji y la larga calle Nakamise-dori. Pasear por el barrio de Ginza. Alojamiento.\n\nDía 13 Tokio\nDesayuno. Traslado al aeropuerto por cuenta del cliente.",
-      "imageUrl": "/img/japon2.jpg",
-      "images" : [
-        "/img/japon2.jpg"
-      ],
-      
-      "duration": "13 días"
-      },
-      {
-      "id" : 11,
-      "title": "Sumergete en la magia de Estambul",
-      "destination": "Estambul",
-      "price": 649,
-      "description": "Sumérgete en la magia de Estambul, la ciudad de las mil y una noches que cabalga entre dos continentes. Deja que el aroma de las especias del Gran Bazar te envuelva, admira la cúpula de Santa Sofía que desafía el tiempo y navega por el Bósforo mientras el sol se pone sobre los minaretes. Esta escapada es un viaje a un lugar donde la historia, la cultura y la gastronomía se encuentran en cada esquina.\n\nSalidas disponibles también desde otras ciudades (consultar).\n\nDía 1: España / Estambul\nSalida en avión a Estambul. Traslado al hotel y resto del día libre para comenzar a descubrir la ciudad. Alojamiento.\n\nDía 2: Estambul (Bósforo y Cuerno de Oro)\nDesayuno. Presentación en el punto de encuentro para la visita del Bósforo y el cuerno de Oro. Comenzaremos con un pequeño paseo de 30 minutos a pie donde podremos ir tomándole el pulso a esta vibrante ciudad y descubriendo algunos de sus monumentos más representativos como es la muralla bizantina. Caminaremos hacia el puerto donde embarcaremos en un barco que nos llevara a través del Bosforo y del Cuerno de Oro. Durante la navegación podremos observar el Palacio de Topkapi o la famosa Torre Gálata. Pasaremos por debajo de sus puentes y divisaremos el Palacio de Dolmabace, el Palacio de Ciragan o la fortaleza de Rumelihisari. Llegaremos a la parte asiática de la ciudad donde tendremos opción de quedarnos y explorar y regresar por nuestra cuenta o continuar en el barco y regresar al punto de partida. Regreso por su cuenta al hotel. Alojamiento.\n\nDía 3: Estambul (Día Libre)\nDesayuno. Día libre en el que poder disfrutar por su cuenta, por ejemplo, visitando sus icónicas mezquitas, como la de Santa Sofia, la preciosa Mezquita azul o la de Soliman o simplemente paseando por sus calles y disfrutando de esta ciudad donde la combinación de oriente con occidente se encuentra en cada esquina. Opcionalmente, podrá tomar distintas excursiones opcionales que le ayudaran a visitar todos los monumentos que esta ciudad ofrece a sus visitantes. Alojamiento.\n\nDía 4: Estambul / España\nDesayuno. A la hora acordada traslado al aeropuerto. Vuelo de regreso a España. Llegada.",
-      "imageUrl": "/img/estambul.jpg",
-      "images" : [
-        "/img/estambul.jpg"
-      ],
-       "includes": [
-        "Vuelo Barcelona - Estambul",
-        "Traslado aeropuerto- hotel",
-        "Alojamiento con Desayuno",
-        "Crucero por el Bósforo y el Cuerno de Oro. Tour en español de 2 horas",
-        "Traslado hotel- aeropuerto ",
-        "Vuelo Estambul-Barcelona",
-        "Seguro de Inclusión."
-            ],
-      
-      "duration": "*Consultar fechas*"
-      },
-      {
-      "id" : 12,
-      "title": "¡CHOLLO! Cruceros Costa por el Mediterráneo: Mini-crucero de 2 días desde 99€",
-      "destination": "Mediterráneo",
-      "price": 99,
-      "description": "¡¡ÚLTIMA HORA!!\nCruceros para el mes de NOVIEMBRE por el Mediterráneo\n\nAPROVECHA ESTA OPORTUNIDAD !!\n\nDescubre las mejores rutas por el Mediterráneo con estas ofertas exclusivas:\n\n---\nBarco: Costa Pacifica\nItinerario: España, Túnez, Italia, Francia\nFecha: 24/11/2025\nPrecio: 7 días a partir de 449 €\n\nBarco: Costa Toscana\nItinerario: España, Italia, Francia\nFecha: 27/11/2025\nPrecio: 3 días a partir de 299 €\n\nBarco: Costa Toscana\nItinerario: España, Italia\nFecha: 30/11/2025\nPrecio: 2 días a partir de 99 €\n\nBarco: Costa Toscana\nItinerario: España, Italia\nFecha: 30/11/2025\nPrecio: 3 días a partir de 149 €\n\nBarco: Costa Toscana\nItinerario: España, Italia, Francia\nFecha: 30/11/2025\nPrecio: 7 días a partir de 449 €\n\n\nCondiciones de la Tarifa:\nSe trata de una tarifa más económica sujeta a condiciones especiales, disponible de forma limitada por tiempo antes de la salida.\n\nCuota de servicio no incluida.",
-      "imageUrl": "/img/cruceroCosta.avif",
-      "images" : [
-        "/img/cruceroCosta.avif"
-      ],
-       "includes": [
-        "Servicios portuarios.",
-        "Camarote asignado automáticamente por el sistema.",
-        "Permite la acumulación de puntos C|Club por gastos a bordo (no por días de crucero)",
-        "La tarifa no es acumulable con otras promociones y no es retroactiva.",
-        "Plazas limitadas."
-            ],
-      
-      "duration": "Noviembre"
-      },
-      {
-      "id" : 13,
-      "title": "Mini-Crucero de 4 noches Puente de Diciembre a Roma/El Vaticano desde Barcelona",
-      "destination": "Roma",
-      "price": 156,
-      "description": "<strong>🚢 NUESTRO PRECIO INCLUYE:</strong>\nBarco ida y vuelta <strong>GRIMALDI</strong> desde Barcelona hasta Civitavecchia.\nAlojamiento 4 noches en <strong>CAMAROTE PRIVADO</strong> para 2 personas.\n2 días completos (08 y 09 Dic) para visitar <strong>ROMA - EL VATICANO</strong>.\n\n<strong>📍 ITINERARIO DE VIAJE:</strong>\n• <strong>06/12/25 - 23:30h:</strong> Salida desde Barcelona (destino Civitavecchia/Roma).\n• <strong>07/12/25 - 20:30h:</strong> Llegada a Civitavecchia.\n• <strong>08/12/25:</strong> Día Libre con posibilidad de excursión a Roma/El Vaticano.\n• <strong>09/12/25:</strong> Día Libre con posibilidad de excursión a Roma.\n• <strong>09/12/25 - 21:30h:</strong> Salida desde Civitavecchia de regreso a Barcelona.\n• <strong>10/12/25 - 21:15h:</strong> Llegada a Barcelona.\n\n<strong>ℹ️ NOTA TRANSPORTE:</strong>\nDesde la terminal del puerto de Civitavecchia hay un autobús que conecta con la estación de tren. Desde allí salen trenes regulares a <em>Stazione S. Pietro</em> (para visitar el Vaticano) o a la estación central de <em>Roma Termini</em> (para visitar el centro de la ciudad).\n\n<strong>🍽️ OPCIÓN CON COMIDAS(254€) (Si se contrata):</strong>\n• <strong>Día 07:</strong> Desayuno, Comida y Cena.\n• <strong>Día 08:</strong> Desayuno y Cena.\n• <strong>Día 09:</strong> Desayuno y Cena.\n• <strong>Día 10:</strong> Desayuno y Comida.\n\n<strong>👶 BEBÉS (0 a 2,99 años):</strong>\nNo pagan nada (el barco no dispone de cunas).\n\n-------------------------\n<strong>⚠️ CONDICIONES TARIFA: PRECIO NO REEMBOLSABLE</strong>",
-      "imageUrl": "/img/cruceroRomaCruise.jpg",
-      "images" : [
-        "/img/cruceroRomaCruise.jpg"
-      ],
-      "duration": "Del 06 al 10 de Diciembre 2025"
-      }
+  },
+  {
+    "id": 7,
+    "title": "LAPONIA : ESPECIAL PUENTE DE DICIEMBRE",
+    "destination": "Nuorgam, Laponia",
+    "price": 2345,
+    "description": "❄✨ Este diciembre… nos vamos al fin del mundo (literalmente) ✨\n\n¿Has soñado alguna vez con ver auroras boreales, montar en moto de nieve o dormir en una cabaña frente al Ártico? Pues es ahora o nunca. 😏🔥\n📍 Nuorgam, Laponia – Finlandia & Noruega\nEl punto más al norte de toda Europa. Paisajes blancos, silencio puro y cielos que bailan en verde.\n\n✈ Salidas 2025:\n• 30 de noviembre desde Madrid\n• 4 de diciembre desde Barcelona\n\n📸 Auroras boreales, nieve virgen y la aventura más top del año. ¿Te vienes?",
+    "imageUrl": "/img/laponia.jpg",
+    "discount": "📢 Últimas plazas disponibles",
+    "images": [
+      "/img/laponia.jpg",
+      "/img/laponia2.jpg",
+      "/img/laponia3.jpg",
+      "/img/laponia4.jpg",
+      "/img/laponia5.jpg"
+    ],
+    "includes": [
+      "Vuelos + traslados aeropuerto-hotel",
+      "4 noches en cabañas en plena Laponia",
+      "Moto de nieve, granja de renos, pesca en hielo, raquetas de nieve…",
+      "Pensión completa y guía durante todo el viaje",
+      "Ropa térmica pro incluida",
+      "Seguro de viaje"
+    ],
+    "duration": "*Fechas en descripción*"
+  },
+  {
+    "id": 8,
+    "title": "¡Descubre Múnich en 2025!",
+    "destination": "Múnich",
+    "price": 351,
+    "description": "Sumérgete en el encanto bávaro con esta escapada de 4 días y 3 noches en el corazón de la ciudad 🌆\n\n🏨 Hotel: München City Center Affiliated by Meliá ⭐⭐⭐⭐⭐\n✈ Vuelo + Hotel incluidos\n📍 Salidas directas desde:\n➡ Barcelona — desde 351€\n➡ Madrid — desde 483€\n➡ Bilbao — desde 547€\n➡ Málaga — desde 559€\n\n✨ Experiencias opcionales:\n🚶‍♀ Tour a pie por el casco antiguo desde 20€\n🏰 Excursión a Neuschwanstein y Linderhof desde 69€\n\n💬 ¡Reserva fácil y rápida con nuestro Chat Vuelo + Hotel!",
+    "imageUrl": "/img/munich.avif",
+    "images": [
+      "/img/munich.avif"
+    ],
+    "duration": "*Consultar fechas*"
+  },
+  {
+    "id": 9,
+    "title": "SUPER JAPON",
+    "destination": "Japón",
+    "price": 3170,
+    "description": "Japón Esencial: Tradición y Vanguardia\n\nEmbárcate en una aventura inolvidable de 9 noches por el corazón de Japón, la tierra donde la tradición milenaria y la modernidad más vibrante se dan la mano. Este circuito está diseñado para que descubras la esencia del país con total comodidad.\n\nExperimenta la increíble eficiencia del mundialmente famoso tren bala, descansa en hoteles seleccionados de Primera Categoría y déjate guiar por un asistente de habla hispana que te descubrirá los secretos de cada destino. Con 5 almuerzos y 2 cenas incluidas, también podrás degustar la gastronomía local sin preocupaciones.\n\nUna oportunidad única para vivir la magia de Japón, con la comodidad de tenerlo todo organizado.\n\n <strong> Salidas y Precios</strong>\n\t·Salidas: Salidas frecuentes programadas durante todo el año.\n\t·Orígenes: Vuelos desde Madrid y Barcelona.\n\t·Destinos: Japón.\n\t·Compañía aérea: Qatar Airways (o similar).",
+    "imageUrl": "/img/japon.jpg",
+    "includes": [
+      "Billete línea regular, clase turista, con la compañía Qatar Airways.",
+      "9 noches en los hoteles previstos o similares, en cat. A, en hab. doble.",
+      "5 almuerzos y 2 cenas según itinerario.",
+      "Guía asistente de habla hispana durante el circuito, excepto en los trayectos en tren bala.",
+      "Seguro de Inclusión."
+    ],
+    "images": [
+      "/img/japon.jpg"
+    ],
+    "duration": "12 días / 9 noches"
+  },
+  {
+    "id": 10,
+    "title": "JAPÓN A TU AIRE",
+    "destination": "Japón",
+    "price": 1820,
+    "description": "Japón a tu Aire: La Ruta Clásica\n\nDescubre la esencia de Japón en este completo recorrido de 13 días diseñado para el <strong>viajero independiente</strong>. Viajando por tu cuenta, podrás explorar a tu ritmo las joyas del país, desde la moderna <strong>Osaka</strong> hasta la vibrante <strong>Tokio</strong>.\n\nEste itinerario te llevará a la histórica <strong>Kioto</strong>, la conmovedora <strong>Hiroshima</strong> (con su isla sagrada de Miyajima) y los tesoros feudales de <strong>Kanazawa</strong> y <strong>Takayama</strong>. Culminarás tu viaje a los pies del icónico <strong>Monte Fuji</strong> en Hakone, antes de sumergirte en la inmensidad de la capital.\n\nUna ruta optimizada para el Japan Rail Pass, con alojamiento y desayuno incluidos cada día, dándote la libertad de descubrir, comer y explorar sin ataduras.\n\n\n<strong>ITINERARIO DÍA A DÍA</strong>\n------------------------\n\nDía 1 Osaka\nLlegada a Osaka y traslado al hotel por su cuenta. Alojamiento.\n\nDía 2 Osaka\nDesayuno. Día libre. Les recomendamos visitar por su cuenta, el Castillo de Osaka y pasear por el distrito de Dotonbori al anochecer. Alojamiento.\n\nDía 3 Osaka/Kioto\nDesayuno. Traslado por su cuenta a la estación de tren, para salir hacia Kioto (utilizando el Japan Rail Pass). Llegada a Kioto y traslado al hotel por su cuenta. En Kioto recomendamos que realicen la visita del templo Todai-ji y del gran santuario sintoísta Kasuga. Alojamiento.\n\nDía 4 Kioto\nDesayuno. Día libre. Les recomendamos realizar visita de la ciudad por su cuenta. Alojamiento.\n\nDía 5 Kioto / Hiroshima\nDesayuno. Salida por su cuenta hasta la estación de Kioto y desde allí hacia Hiroshima vía Osaka usando el Japan Rail Pass. Llegada a Hiroshima, traslado de la estación al hotel por su cuenta. Alojamiento.\n\nDía 6 Hiroshima\nDesayuno. Día libre. En Hiroshima recomendamos visitar por su cuenta el Museo y Parque de la Paz, con la cúpula de la Bomba Atómica, o acercarse a la cercana isla de Miyayima para ver el santuario Itsukushima. Alojamiento.\n\nDía 7 Hiroshima /Kanazawa\nDesayuno. Traslado a la estación de Hiroshima por su cuenta, para salir en tren a Kanazawa (utilizando el Japan Rail Pass). Llegada a Kanazawa y traslado al hotel por su cuenta. Alojamiento.\nEn Kanazawa recomendamos visitar por su cuenta el parque Kenroku-en, el distrito de las geishas Higashi Chaya-gal y el castillo de los Maeda. Pueden optar por visitar también la casa del Samurai Nomura y el mercado de Omicho Ichiba. Alojamiento.\n\nDía 8 Kanazawa /Takayama\nDesayuno. Traslado por su cuenta hasta la estación de Kanazawa para salir en tren hacia Takayama. Llegada a Takayama traslado al hotel por su cuenta y tarde libre para explorar la ciudad. Alojamiento.\n\nDía 9 Takayama / Nagoya /Odawara / Hakone\nDesayuno. Traslado por su cuenta a la estación de Takayama, para salir hacia Odawara, vía Nagoya (utilizando el Japan Rail Pass). Llegada a Odawara y traslado al hotel por su cuenta en Hakone. Recomendamos hacer un paseo en barco por el Lago Ashi, para divisar el Monte Fuji o ver el valle de Owakudani. Alojamiento.\n\nDía 10 Hakone / Odawara / Tokio\nDesayuno. Traslado por su cuenta a la estación de Odawara, para salir en tren a Tokio, vía Nagoya (utilizando el Japan Rail Pass). Llegada a Tokio y traslado al hotel por su cuenta. Alojamiento.\n\nDías 11-12 Tokio\nDesayuno. Días libres. Les recomendamos realizar la visita de la ciudad por su cuenta; ver el santuario sintoísta Meiji Jingu y el barrio de Asakusa, donde se encuentran el templo Senso-ji y la larga calle Nakamise-dori. Pasear por el barrio de Ginza. Alojamiento.\n\nDía 13 Tokio\nDesayuno. Traslado al aeropuerto por cuenta del cliente.",
+    "imageUrl": "/img/japon2.jpg",
+    "images": [
+      "/img/japon2.jpg"
+    ],
+    "duration": "13 días"
+  },
+  {
+    "id": 11,
+    "title": "Sumergete en la magia de Estambul",
+    "destination": "Estambul",
+    "price": 649,
+    "description": "Sumérgete en la magia de Estambul, la ciudad de las mil y una noches que cabalga entre dos continentes. Deja que el aroma de las especias del Gran Bazar te envuelva, admira la cúpula de Santa Sofía que desafía el tiempo y navega por el Bósforo mientras el sol se pone sobre los minaretes. Esta escapada es un viaje a un lugar donde la historia, la cultura y la gastronomía se encuentran en cada esquina.\n\nSalidas disponibles también desde otras ciudades (consultar).\n\nDía 1: España / Estambul\nSalida en avión a Estambul. Traslado al hotel y resto del día libre para comenzar a descubrir la ciudad. Alojamiento.\n\nDía 2: Estambul (Bósforo y Cuerno de Oro)\nDesayuno. Presentación en el punto de encuentro para la visita del Bósforo y el cuerno de Oro. Comenzaremos con un pequeño paseo de 30 minutos a pie donde podremos ir tomándole el pulso a esta vibrante ciudad y descubriendo algunos de sus monumentos más representativos como es la muralla bizantina. Caminaremos hacia el puerto donde embarcaremos en un barco que nos llevara a través del Bosforo y del Cuerno de Oro. Durante la navegación podremos observar el Palacio de Topkapi o la famosa Torre Gálata. Pasaremos por debajo de sus puentes y divisaremos el Palacio de Dolmabace, el Palacio de Ciragan o la fortaleza de Rumelihisari. Llegaremos a la parte asiática de la ciudad donde tendremos opción de quedarnos y explorar y regresar por nuestra cuenta o continuar en el barco y regresar al punto de partida. Regreso por su cuenta al hotel. Alojamiento.\n\nDía 3: Estambul (Día Libre)\nDesayuno. Día libre en el que poder disfrutar por su cuenta, por ejemplo, visitando sus icónicas mezquitas, como la de Santa Sofia, la preciosa Mezquita azul o la de Soliman o simplemente paseando por sus calles y disfrutando de esta ciudad donde la combinación de oriente con occidente se encuentra en cada esquina. Opcionalmente, podrá tomar distintas excursiones opcionales que le ayudaran a visitar todos los monumentos que esta ciudad ofrece a sus visitantes. Alojamiento.\n\nDía 4: Estambul / España\nDesayuno. A la hora acordada traslado al aeropuerto. Vuelo de regreso a España. Llegada.",
+    "imageUrl": "/img/estambul.jpg",
+    "images": [
+      "/img/estambul.jpg"
+    ],
+    "includes": [
+      "Vuelo Barcelona - Estambul",
+      "Traslado aeropuerto- hotel",
+      "Alojamiento con Desayuno",
+      "Crucero por el Bósforo y el Cuerno de Oro. Tour en español de 2 horas",
+      "Traslado hotel- aeropuerto ",
+      "Vuelo Estambul-Barcelona",
+      "Seguro de Inclusión."
+    ],
+    "duration": "*Consultar fechas*"
+  },
+  {
+    "id": 12,
+    "title": "¡CHOLLO! Cruceros Costa por el Mediterráneo: Mini-crucero de 2 días desde 99€",
+    "destination": "Mediterráneo",
+    "price": 99,
+    "description": "¡¡ÚLTIMA HORA!!\nCruceros para el mes de NOVIEMBRE por el Mediterráneo\n\nAPROVECHA ESTA OPORTUNIDAD !!\n\nDescubre las mejores rutas por el Mediterráneo con estas ofertas exclusivas:\n\n---\nBarco: Costa Pacifica\nItinerario: España, Túnez, Italia, Francia\nFecha: 24/11/2025\nPrecio: 7 días a partir de 449 €\n\nBarco: Costa Toscana\nItinerario: España, Italia, Francia\nFecha: 27/11/2025\nPrecio: 3 días a partir de 299 €\n\nBarco: Costa Toscana\nItinerario: España, Italia\nFecha: 30/11/2025\nPrecio: 2 días a partir de 99 €\n\nBarco: Costa Toscana\nItinerario: España, Italia\nFecha: 30/11/2025\nPrecio: 3 días a partir de 149 €\n\nBarco: Costa Toscana\nItinerario: España, Italia, Francia\nFecha: 30/11/2025\nPrecio: 7 días a partir de 449 €\n\n\nCondiciones de la Tarifa:\nSe trata de una tarifa más económica sujeta a condiciones especiales, disponible de forma limitada por tiempo antes de la salida.\n\nCuota de servicio no incluida.",
+    "imageUrl": "/img/cruceroCosta.avif",
+    "images": [
+      "/img/cruceroCosta.avif"
+    ],
+    "includes": [
+      "Servicios portuarios.",
+      "Camarote asignado automáticamente por el sistema.",
+      "Permite la acumulación de puntos C|Club por gastos a bordo (no por días de crucero)",
+      "La tarifa no es acumulable con otras promociones y no es retroactiva.",
+      "Plazas limitadas."
+    ],
+    "duration": "Noviembre"
+  },
+  {
+    "id": 13,
+    "title": "Mini-Crucero de 4 noches Puente de Diciembre a Roma/El Vaticano desde Barcelona",
+    "destination": "Roma",
+    "price": 156,
+    "description": "<strong>🚢 NUESTRO PRECIO INCLUYE:</strong>\nBarco ida y vuelta <strong>GRIMALDI</strong> desde Barcelona hasta Civitavecchia.\nAlojamiento 4 noches en <strong>CAMAROTE PRIVADO</strong> para 2 personas.\n2 días completos (08 y 09 Dic) para visitar <strong>ROMA - EL VATICANO</strong>.\n\n<strong>📍 ITINERARIO DE VIAJE:</strong>\n• <strong>06/12/25 - 23:30h:</strong> Salida desde Barcelona (destino Civitavecchia/Roma).\n• <strong>07/12/25 - 20:30h:</strong> Llegada a Civitavecchia.\n• <strong>08/12/25:</strong> Día Libre con posibilidad de excursión a Roma/El Vaticano.\n• <strong>09/12/25:</strong> Día Libre con posibilidad de excursión a Roma.\n• <strong>09/12/25 - 21:30h:</strong> Salida desde Civitavecchia de regreso a Barcelona.\n• <strong>10/12/25 - 21:15h:</strong> Llegada a Barcelona.\n\n<strong>ℹ️ NOTA TRANSPORTE:</strong>\nDesde la terminal del puerto de Civitavecchia hay un autobús que conecta con la estación de tren. Desde allí salen trenes regulares a <em>Stazione S. Pietro</em> (para visitar el Vaticano) o a la estación central de <em>Roma Termini</em> (para visitar el centro de la ciudad).\n\n<strong>🍽️ OPCIÓN CON COMIDAS(254€) (Si se contrata):</strong>\n• <strong>Día 07:</strong> Desayuno, Comida y Cena.\n• <strong>Día 08:</strong> Desayuno y Cena.\n• <strong>Día 09:</strong> Desayuno y Cena.\n• <strong>Día 10:</strong> Desayuno y Comida.\n\n<strong>👶 BEBÉS (0 a 2,99 años):</strong>\nNo pagan nada (el barco no dispone de cunas).\n\n-------------------------\n<strong>⚠️ CONDICIONES TARIFA: PRECIO NO REEMBOLSABLE</strong>",
+    "imageUrl": "/img/cruceroRomaCruise.jpg",
+    "images": [
+      "/img/cruceroRomaCruise.jpg"
+    ],
+    "duration": "Del 06 al 10 de Diciembre 2025"
+  },
+  {
+    "id": 14,
+    "title": "Mini-Crucero de 4 noches Puente de Diciembre a Roma/El Vaticano desde Barcelona",
+    "destination": "Zanzibar",
+    "price": 1794,
+    "tipo": "Safari",
+    "description": "<strong>¡Aventura salvaje desde Zanzíbar!</strong>\n\nMuy pronto por la mañana, traslado desde tu hotel al aeropuerto de Stone Town para volar al aeródromo de Mtemere en el <strong>Parque Nacional de Selous (Nyerere)</strong>. El vuelo dura aproximadamente de 50 minutos a 1 hora.\n\nLa <strong>Reserva de caza de Selous</strong> es una vasta área de vida silvestre de 50,000 km² en el sur de Tanzania. Reconocida como Patrimonio de la Humanidad, alberga elefantes, leones, leopardos, perros salvajes y más.\n\nDisfrutaremos de un <strong>día completo de safari</strong> recorriendo las extensas llanuras en un vehículo con techo abierto, disfrutando de avistamientos de leones, jirafas, cebras, hipopótamos y mucho más. Incluye un almuerzo tipo picnic en plena naturaleza.\n\nAl finalizar, vuelo de regreso a Zanzíbar y traslado a tu hotel.\n\n<strong>⚠️ Nota Importante sobre Equipaje:</strong>\nPeso autorizado en la avioneta: <strong>15 kg en maleta blanda</strong> (no se admiten trolleys ni maletas rígidas).",
+    "imageUrl": "/img/zanzibar.avif",
+    "images": [
+      "/img/zanzibar.avif"
+    ],
+    "includes": [
+      "Traslados de ida y vuelta desde tu hotel en Zanzíbar",
+      "Vuelo de ida y vuelta desde Zanzíbar",
+      "Safari en vehículo con conductor/guía profesional (Inglés)",
+      "Almuerzo durante el safari",
+      "Entradas al Parque Nacional Selous",
+      "Todos los impuestos / IVA"
+    ],
+    "notIncludes": [
+      "Gastos de carácter personal",
+      "Artículos personales",
+      "Cualquier otra actividad no mencionada",
+      "Propinas"
+    ],
+    "duration": "9 días / 7 noches"
+  }
 ]
