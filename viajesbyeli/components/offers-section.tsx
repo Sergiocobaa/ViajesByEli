@@ -88,9 +88,10 @@ export function OffersSection() {
                 <CardContent className="p-6 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="text-xl font-bold mb-1">{offer.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      {offer.description.substring(0, 70)}...
-                    </p>
+                    <p
+                      className="text-sm text-muted-foreground mb-4"
+                      dangerouslySetInnerHTML={{ __html: offer.description.substring(0, 70) + '...' }}
+                    />
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                       <Calendar className="w-4 h-4" />
                       <span>{offer.duration}</span>
@@ -98,28 +99,28 @@ export function OffersSection() {
                   </div>
 
                   <div className="flex items-center justify-between pt-4 border-t border-border mt-auto">
-                        <div>
-                            <p className="text-sm text-muted-foreground">Desde</p>
-                            <p className="text-2xl font-bold text-cyan-500">
-                                €{offer.price.toFixed(0)}
-                            </p>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <span className="text-sm font-medium text-muted-foreground  sm:inline">
-                                {offer.destination}
-                            </span>
-                            
-                            {/* 🛑 CORRECCIÓN: Quitamos el <a> alrededor del MapPin 🛑 */}
-                            {/* El Link principal ya hace la tarjeta cliqueable */}
-                            <MapPin 
-                                className="w-5 h-5 text-rose-400 cursor-pointer transition-opacity hover:opacity-80" 
-                                
-                                // Opcional: Podrías añadir un onClick aquí si necesitas funcionalidad extra
-                                // onClick={(e) => { e.stopPropagation(); window.open(`URL_MAPS...`, '_blank'); }}
-                            />
-                            
-                        </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Desde</p>
+                      <p className="text-2xl font-bold text-cyan-500">
+                        €{offer.price.toFixed(0)}
+                      </p>
                     </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-medium text-muted-foreground  sm:inline">
+                        {offer.destination}
+                      </span>
+
+                      {/* 🛑 CORRECCIÓN: Quitamos el <a> alrededor del MapPin 🛑 */}
+                      {/* El Link principal ya hace la tarjeta cliqueable */}
+                      <MapPin
+                        className="w-5 h-5 text-rose-400 cursor-pointer transition-opacity hover:opacity-80"
+
+                      // Opcional: Podrías añadir un onClick aquí si necesitas funcionalidad extra
+                      // onClick={(e) => { e.stopPropagation(); window.open(`URL_MAPS...`, '_blank'); }}
+                      />
+
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
