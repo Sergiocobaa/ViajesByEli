@@ -202,35 +202,37 @@
   },
   {
     "id": 14,
-    "title": "Mini-Crucero de 4 noches Puente de Diciembre a Roma/El Vaticano desde Barcelona",
+    "title": "Zanzibar Quality - Estancia de Playa con Tasas Gratis",
     "destination": "Zanzibar",
     "price": 1794,
-    "tipo": "Safari",
-    "description": "<strong>¡Aventura salvaje desde Zanzíbar!</strong>\n\nMuy pronto por la mañana, traslado desde tu hotel al aeropuerto de Stone Town para volar al aeródromo de Mtemere en el <strong>Parque Nacional de Selous (Nyerere)</strong>. El vuelo dura aproximadamente de 50 minutos a 1 hora.\n\nLa <strong>Reserva de caza de Selous</strong> es una vasta área de vida silvestre de 50,000 km² en el sur de Tanzania. Reconocida como Patrimonio de la Humanidad, alberga elefantes, leones, leopardos, perros salvajes y más.\n\nDisfrutaremos de un <strong>día completo de safari</strong> recorriendo las extensas llanuras en un vehículo con techo abierto, disfrutando de avistamientos de leones, jirafas, cebras, hipopótamos y mucho más. Incluye un almuerzo tipo picnic en plena naturaleza.\n\nAl finalizar, vuelo de regreso a Zanzíbar y traslado a tu hotel.\n\n<strong>⚠️ Nota Importante sobre Equipaje:</strong>\nPeso autorizado en la avioneta: <strong>15 kg en maleta blanda</strong> (no se admiten trolleys ni maletas rígidas).",
+    "tipo": "Estancia / Playa",
+    "description": "<strong>¡Descubre Zanzíbar con el servicio exclusivo Quality!</strong>\n\nComienza tu viaje volando desde Madrid con la compañía <strong>World2Fly</strong>. Disfruta de ventajas exclusivas: <strong>facturación y embarque preferente</strong> y asiento reservado para viajar juntos.\n\nA la llegada, te espera un <strong>traslado directo a tu hotel</strong> (sin paradas intermedias) para que empieces a disfrutar enseguida de tus vacaciones.\n\nDurante los días intermedios, relájate en las más de 30 playas paradisíacas de arena blanca de la \"Isla de las Especias\" o piérdete por las laberínticas calles de <strong>Stone Town</strong>, declarada Patrimonio de la Humanidad por la UNESCO.\n\nEl último día, traslado directo al aeropuerto tras facturar tu equipaje para el vuelo de regreso a Madrid.",
     "imageUrl": "/img/zanzibar.avif",
     "images": [
       "/img/zanzibar.avif"
     ],
     "highlights": [
-      "Vuelos ida y vuelta desde Zanzíbar incluidos",
-      "Safari en Jeep 4x4 con techo abierto",
-      "Avistamiento de los 'Big Five'",
-      "Patrimonio de la Humanidad de la UNESCO",
-      "Almuerzo picnic en la sabana"
+      "Tasas Gratis incluidas",
+      "Vuelo directo con World2Fly",
+      "Facturación y embarque preferente",
+      "Asiento reservado incluido",
+      "Traslados directos sin paradas (Aeropuerto-Hotel-Aeropuerto)"
     ],
     "includes": [
-      "Traslados de ida y vuelta desde tu hotel en Zanzíbar",
-      "Vuelo de ida y vuelta desde Zanzíbar",
-      "Safari en vehículo con conductor/guía profesional (Inglés)",
-      "Almuerzo durante el safari",
-      "Entradas al Parque Nacional Selous",
-      "Todos los impuestos / IVA"
+      "Vuelo Madrid-Zanzibar-Madrid con World2Fly",
+      "Estancia en el Hotel y habitación reservada",
+      "Asistencia en destino",
+      "Traslado directo aeropuerto-hotel-aeropuerto",
+      "Preferencia para facturar y embarcar",
+      "Reserva de asiento incluida"
     ],
     "notIncludes": [
-      "Gastos de carácter personal",
-      "Artículos personales",
-      "Cualquier otra actividad no mencionada",
-      "Propinas"
+      "Seguro Premium",
+      "Acercamiento en tren (AVE) o avión a Madrid",
+      "Hotel de conexión en Madrid",
+      "Menú gourmet en el vuelo",
+      "Excursiones y actividades en destino (Blue Safari, Prison Island, etc.)",
+      "Gastos personales y propinas"
     ],
     "duration": "9 días / 7 noches"
   }
