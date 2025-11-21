@@ -5,6 +5,7 @@ import { AuthNavButtons } from "@/components/auth-nav-buttons"
 import Link from "next/link"
 import { Footer } from "@/components/footer"
 import Navbar from "@/components/navbar"
+import { NewsletterPopup } from "@/components/newsletter-popup"
 
 export default function Home() {
   return (
@@ -14,15 +15,15 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-              src="/fondo.jpg"
-              alt="Destino paradisíaco"
-              className="w-full h-full object-cover"
-              fetchPriority="high"
+            src="/fondo.jpg"
+            alt="Destino paradisíaco"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background" />
         </div>
 
-        
+
         <Navbar />
         {/* Hero Content */}
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 md:px-12 pb-20">
@@ -40,6 +41,7 @@ export default function Home() {
       {/* Offers Section */}
       <OffersSection />
       <Footer></Footer>
+      <NewsletterPopup />
     </main>
   )
 }

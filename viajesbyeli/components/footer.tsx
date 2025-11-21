@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import { NewsletterForm } from "@/components/newsletter-form"
 
 export function Footer() {
   const socialLinks = [
@@ -13,11 +14,11 @@ export function Footer() {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo y descripción */}
-          <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center">
               <img src="/logo.png" alt="Viajes by Eli" className="h-16 w-auto" />
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
+            <p className="text-muted-foreground text-sm leading-relaxed">
               Tu agencia de viajes de confianza. Descubre el mundo con las mejores ofertas y experiencias únicas
               adaptadas a ti.
             </p>
@@ -68,6 +69,12 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Newsletter */}
+          <div>
+            <NewsletterForm />
+          </div>
+
         </div>
 
         {/* Redes sociales */}
