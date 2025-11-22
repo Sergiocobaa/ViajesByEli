@@ -26,7 +26,9 @@ export function OffersSection() {
         const res = await fetch("/ofertas.json");
         if (!res.ok) throw new Error("No se pudo cargar el archivo JSON");
         const data = await res.json();
-        setOffers(data);
+        // Sort by id descending (newest first)
+        const sortedData = data.sort((a: Offer, b: Offer) => b.id - a.id);
+        setOffers(sortedData);
       } catch (err) {
         console.error(err);
         setError("Error al cargar las ofertas. Verifica el archivo JSON.");
