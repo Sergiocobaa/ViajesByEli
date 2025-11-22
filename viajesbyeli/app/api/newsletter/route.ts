@@ -29,7 +29,6 @@ export async function POST(req: Request) {
             body: JSON.stringify({
                 email: email,
                 groups: ["171716604033238691"],
-                // groups: ["GROUP_ID"], // Optional: Add to specific group if needed
             }),
         })
 

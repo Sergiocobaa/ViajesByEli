@@ -236,5 +236,20 @@
       "Gastos personales y propinas"
     ],
     "duration": "9 días / 7 noches"
+  },
+  {
+    "id": 15,
+    "title": "Escapada a París - Puente de Diciembre",
+    "destination": "París",
+    "price": 249,
+    "description": "<strong>¡Descubre la Magia de París en el Puente de Diciembre!</strong> 🇫🇷✨\n\nDisfruta de una escapada inolvidable a la Ciudad de la Luz. Desde solo 249€, vive la experiencia de pasear por los Campos Elíseos, admirar la Torre Eiffel y navegar por el Sena.\n\n<strong>ITINERARIO:</strong>\n• <strong>Primer día:</strong> Embarque y llegada. Vuelo con destino París, recogida de equipaje y traslado para comenzar a disfrutar.\n• <strong>Días intermedios:</strong> Estancia en París. Tiempo libre para descubrir monumentos icónicos como el Louvre, Notre Dame o Versalles.\n• <strong>Último día:</strong> Regreso. Vuelo de vuelta a la ciudad de origen.\n\n<strong>SERVICIOS ADICIONALES:</strong>\n• Seguro Premium disponible.",
+    "imageUrl": "/img/paris.avif",
+    "duration": "Puente de Diciembre",
+    "includes": [
+      "Vuelo Aeropuerto Origen-París-Aeropuerto Origen",
+      "Estancia en el Hotel y habitación reservada",
+      "Seguro inclusión y cancelación"
+    ],
+    "tipo": "Ciudad"
   }
 ]
