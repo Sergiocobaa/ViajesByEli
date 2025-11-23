@@ -251,5 +251,24 @@
       "Seguro inclusión y cancelación"
     ],
     "tipo": "Ciudad"
+  },
+  {
+    "id": 16,
+    "title": "AUTO-RUTA POR ALSACIA Y LORENA",
+    "destination": "Alsacia y Lorena",
+    "price": 1060,
+    "description": "<strong>Conozca a su ritmo las regiones francesas con más aire germánico. Naturaleza e historia se unen para dar al turista un viaje inolvidable.</strong>\n\n<strong>ITINERARIO:</strong>\n• <strong>Día 1:</strong> Ciudad de origen - Basilea - Alsacia. Llegada y recogida del coche de alquiler. Ruta hacia Alsacia, región de pueblos de cuento y viñedos.\n• <strong>Día 2:</strong> Alsacia - Estrasburgo - Alsacia. Visita a la capital, Estrasburgo, con su impresionante catedral y el barrio de la Petit France.\n• <strong>Día 3:</strong> Alsacia - Colmar - Mulhouse - Alsacia. Descubra Colmar, la 'Pequeña Venecia', y Mulhouse con su pasado industrial.\n• <strong>Día 4:</strong> Alsacia - Metz - Nancy - Alsacia. Excursión a la región de Lorena, visitando Metz y la elegante plaza Stanislas en Nancy.\n• <strong>Día 5:</strong> Alsacia. Día libre para seguir disfrutando de la región.\n• <strong>Día 6:</strong> Alsacia - Basilea - Ciudad de origen. Devolución del vehículo y vuelo de regreso.\n\n<strong>HOTELES PREVISTOS (o similares):</strong>\n• Colmar: Hotel Mercure Colmar Centre Unterlinden 4*\n• Mulhouse: Hôtel du Parc 4*\n• Estrasburgo: Hotel Sofitel Strasbourg Grande Ile 5*\n\n<strong>SALIDAS 2025:</strong> Diarias del 1/1/25 al 31/12/25.\n\n<strong>A TENER EN CUENTA:</strong>\n• El conductor debe ser mayor de 25 años y tener tarjeta de crédito.\n• Tasas turísticas de pago directo en destino.",
+    "imageUrl": "/img/alsacia.png",
+    "duration": "6 Días / 5 noches",
+    "discount": "17/11-1/12 Descuento BlackFriday - 5%",
+    "includes": [
+      "Vuelos en línea regular, clase turista",
+      "Compensación de la huella de CO2",
+      "Coche de alquiler (Basilea) con kilometraje ilimitado y seguros",
+      "5 noches de estancia en hotel y régimen seleccionado",
+      "Seguro de viaje",
+      "Tasas aéreas y carburante"
+    ],
+    "tipo": "Ruta"
   }
 ]
