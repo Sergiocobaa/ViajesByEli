@@ -270,5 +270,31 @@
       "Tasas aéreas y carburante"
     ],
     "tipo": "Ruta"
+  },
+  {
+    "id": 17,
+    "title": "EGIPTO ÚNICO",
+    "destination": "Luxor - Edfu - Aswan - El Cairo",
+    "price": 599,
+    "description": "Navega por el majestuoso Nilo y descubre la antigua civilización egipcia. Desde el templo de Karnak y las pirámides de Giza hasta Abu Simbel, son cientos de monumentos los que convierten este país en Patrimonio de la Humanidad. Sumérgete en el bullicio de sus bazares, disfruta de su gastronomía y de la amabilidad de su gente. Una experiencia inolvidable que hay que vivir al menos una vez en la vida.\n\nDÍA 1. CIUDAD DE ORIGEN - LUXOR\nEmbarque en vuelo especial directo con destino Luxor. Llegada, asistencia por nuestro representante de habla hispana, trámites de visado, recogida de maletas, traslado al crucero. Distribución de habitaciones, alojamiento y cena.\n\nDÍA 2. LUXOR - ESNA - EDFU\nPensión completa a bordo. Hoy visitaremos los templos de Luxor y Karnak, dos de los más espectaculares de Egipto y que antiguamente estaban unidos por la mítica avenida de las esfinges de unos 3 km de longitud.\nOpcionalmente podrán contratar la visita para recorrer la Orilla Occidental, Patrimonio de la Humanidad desde 1979, para conocer la majestuosa Necrópolis de Tebas.\n\nDÍA 3. EDFU - KOM OMBO - ASWAN\nPensión completa a bordo. Por la mañana visitaremos el Templo dedicado al dios Horus en Edfu. Continuaremos la navegación hasta Kom Ombo donde visitaremos el Templo dedicado a los Dioses Sobek y Haroeris. Navegación hasta Aswan.\n\nDÍA 4. ASWAN\nPensión completa. Hoy realizaremos la visita a Abu Simbel, los majestuosos templos de Ramses II y su esposa Nefertari. Regreso al barco para la comida. Tarde libre.\n\nDÍA 5. ASWAN - EL CAIRO\nDesayuno a bordo. Por la mañana podremos disfrutar del barco o de alguna de las excursiones opcionales. Comida. Traslado al aeropuerto para tomar el vuelo con destino a El Cairo. Llegada, traslado al hotel y alojamiento.\n\nDÍA 6. EL CAIRO\nDesayuno. Por la mañana, exploraremos la majestuosa explanada de las pirámides en la necrópolis de Guiza. Después visitaremos el Gran Museo Egipcio (GEM). Traslado al hotel y alojamiento.\n\nDÍA 7. EL CAIRO\nDesayuno. Día libre. Opcionalmente podrán contratar el tour de día completo, visitando la mezquita de Ibn Tulun, el Museo Egipcio de Antigüedades, el barrio copto, el Museo de la Civilización egipcia (NMEC) y el Bazar de Khan el Khalili.\n\nDÍA 8. EL CAIRO – CIUDAD DE ORIGEN\nDesayuno. Traslado al aeropuerto para tomar el vuelo de regreso a España.",
+    "imageUrl": "/img/egipto_unico.png",
+    "duration": "8 Días / 7 Noches - Salidas del 06 DEC 2025 al 31 OCT 2026",
+    "includes": [
+      "Vuelos internacionales",
+      "Vuelo interno",
+      "4 noches crucero Nilo en PC en la motonave 5*",
+      "3 noches hotel El Cairo en AD en el hotel seleccionado",
+      "Visitas según itinerario",
+      "Todos los traslados en vehículo acondicionado",
+      "Tasas de aeropuerto",
+      "Seguro de viaje básico"
+    ],
+    "notIncludes": [
+      "Propinas generales + visado de entrada 120€ / pax (pago obligatorio en destino)",
+      "Propinas del guía (a criterio personal)",
+      "Bebidas",
+      "Ningún otro servicio no mencionado como incluido"
+    ],
+    "tipo": "Circuito"
   }
 ]
