@@ -296,5 +296,29 @@
       "Ningún otro servicio no mencionado como incluido"
     ],
     "tipo": "Circuito"
+  },
+  {
+    "id": 18,
+    "title": "PARAÍSOS DEL MAR ROJO TODO INCLUIDO",
+    "destination": "Sharm El Sheikh, Mar Rojo",
+    "price": 895,
+    "description": "¡OFERTA DE LANZAMIENTO! Vuelve el primer vuelo directo del mercado a Sharm El Sheikh con una oferta irresistible: 8 días / 7 noches en Todo Incluido por sólo 895€. Un destino vacacional top, poco masificado, que ofrece buceo, playa, arte, vida nocturna y mucho más.\n\nDIA 1. CIUDAD DE ORIGEN - SHARM EL SHEIKH\nEmbarque en vuelo internacional destino Sharm El Sheikh. Llegada, traslado al hotel y alojamiento.\n\nDÍA 2. SHARM EL SHEIKH\nEstancia en régimen de Todo Incluido. City Tour de medio día para conocer la ciudad: Mezquita Al Mustafa, Catedral Ortodoxa de Al Samaen y el mercado del casco viejo.\n\nDÍA 3. SHARM EL SHEIKH\nDía libre en Todo Incluido. Posibilidad de excursión en barco a la Isla Blanca y Ras Mohamed para snorkel y almuerzo a bordo.\n\nDÍA 4. SHARM EL SHEIKH\nDía libre en Todo Incluido. Opciones: Ruta en Quads por el desierto o visita al Parque Nacional de Ras Mohamed (Lago encantado, Manglar).\n\nDÍA 5. SHARM EL SHEIKH\nDía libre en Todo Incluido. Posibilidad de visita nocturna al Monte Sinaí y Monasterio de Santa Catalina para ver el amanecer.\n\nDÍA 6 & 7. SHARM EL SHEIKH\nDías libres para disfrutar del hotel, playa o contratar actividades.\n\nDIA 8. SHARM EL SHEIKH - CIUDAD DE ORIGEN\nDesayuno. Traslado al aeropuerto y vuelo de regreso.",
+    "imageUrl": "/img/sharam.webp",
+    "duration": "8 días / 7 noches - Del 20 Jun al 05 Sep 2026",
+    "includes": [
+      "Vuelos internacionales",
+      "Tasas aeroportuarias (275 €)",
+      "7 noches en hotel Barceló Tirán en TODO INCLUIDO",
+      "City Tour en Sharm El Sheikh",
+      "Guía acompañante de habla hispana",
+      "Todos los traslados",
+      "Seguro de viaje básico"
+    ],
+    "notIncludes": [
+      "Cuota de servicio y propinas generales 55€/persona (pago en destino)",
+      "Propinas del guía (a criterio personal)",
+      "Ningún servicio no especificado como incluido"
+    ],
+    "tipo": "Estancia / Playa"
   }
 ]
