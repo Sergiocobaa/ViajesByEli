@@ -320,5 +320,15 @@
       "Ningún servicio no especificado como incluido"
     ],
     "tipo": "Estancia / Playa"
+  },
+  {
+    "id": 19,
+    "title": "SUPEROFERTA 2x1 – DUBÁI 2026",
+    "destination": "Dubái y Abu Dhabi",
+    "price": 782,
+    "description": "🏖️ Vive el verano más espectacular en Dubái y Abu Dhabi con nuestra promoción exclusiva.\n\nOpciones disponibles:\n🌟 4 noches: Dubái + Safari por el desierto\n💎 7 noches: Dubái + Abu Dhabi + Safari\n🌴 También puedes combinar tu viaje con Maldivas\n\nPrecios por persona:\n💰 4 noches: 403 € + 379 € tasas = 782 €\n💰 7 noches: 567 € + 379 € tasas = 946 €\n💰 10 noches: 1.775€\n\n📅 Fechas de viaje: 1 de mayo – 18 de septiembre 2026\n✅ Descuento 2x1 ya incluido en los precios sobre servicios terrestres\n\n🏜️ ¡No pierdas la oportunidad de vivir la aventura de tus sueños en Dubái y Abu Dhabi!",
+    "imageUrl": "/img/dubai_2026.webp",
+    "duration": "1 de mayo – 18 de septiembre 2026",
+    "tipo": "Circuito"
   }
 ]
